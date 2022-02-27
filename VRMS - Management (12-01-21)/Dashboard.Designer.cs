@@ -81,8 +81,14 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
+            this.lbl4 = new System.Windows.Forms.Label();
+            this.lbl2 = new System.Windows.Forms.Label();
+            this.lbl3 = new System.Windows.Forms.Label();
             this.guna2VSeparator2 = new Guna.UI2.WinForms.Guna2VSeparator();
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.tlpUp = new System.Windows.Forms.TableLayoutPanel();
             this.pnlvInside = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tlpvInside = new System.Windows.Forms.TableLayoutPanel();
@@ -100,13 +106,7 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.lbl2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl4 = new System.Windows.Forms.Label();
             this.lblRV = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lbl3 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblDash = new System.Windows.Forms.Label();
             this.pnlShow = new Guna.UI.WinForms.GunaElipsePanel();
@@ -1143,6 +1143,42 @@
             this.tableLayoutPanel8.Size = new System.Drawing.Size(231, 161);
             this.tableLayoutPanel8.TabIndex = 3;
             // 
+            // lbl4
+            // 
+            this.lbl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl4.AutoSize = true;
+            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.lbl4.Location = new System.Drawing.Point(3, 114);
+            this.lbl4.Name = "lbl4";
+            this.lbl4.Size = new System.Drawing.Size(225, 39);
+            this.lbl4.TabIndex = 17;
+            this.lbl4.Text = "000";
+            // 
+            // lbl2
+            // 
+            this.lbl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl2.AutoSize = true;
+            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.lbl2.Location = new System.Drawing.Point(3, 7);
+            this.lbl2.Name = "lbl2";
+            this.lbl2.Size = new System.Drawing.Size(225, 39);
+            this.lbl2.TabIndex = 13;
+            this.lbl2.Text = "000";
+            // 
+            // lbl3
+            // 
+            this.lbl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl3.AutoSize = true;
+            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.lbl3.Location = new System.Drawing.Point(3, 60);
+            this.lbl3.Name = "lbl3";
+            this.lbl3.Size = new System.Drawing.Size(225, 39);
+            this.lbl3.TabIndex = 15;
+            this.lbl3.Text = "000";
+            // 
             // guna2VSeparator2
             // 
             this.guna2VSeparator2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -1169,6 +1205,42 @@
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel7.Size = new System.Drawing.Size(230, 161);
             this.tableLayoutPanel7.TabIndex = 2;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.label6.Location = new System.Drawing.Point(3, 14);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(224, 24);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "2 WHEELS";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.label8.Location = new System.Drawing.Point(3, 67);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(224, 24);
+            this.label8.TabIndex = 14;
+            this.label8.Text = "3 WHEELS";
+            // 
+            // label10
+            // 
+            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.label10.Location = new System.Drawing.Point(3, 121);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(224, 24);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "4 WHEELS";
             // 
             // tlpUp
             // 
@@ -1398,42 +1470,6 @@
             this.panel10.Size = new System.Drawing.Size(227, 85);
             this.panel10.TabIndex = 14;
             // 
-            // lbl2
-            // 
-            this.lbl2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl2.AutoSize = true;
-            this.lbl2.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lbl2.Location = new System.Drawing.Point(3, 7);
-            this.lbl2.Name = "lbl2";
-            this.lbl2.Size = new System.Drawing.Size(225, 39);
-            this.lbl2.TabIndex = 13;
-            this.lbl2.Text = "000";
-            // 
-            // label6
-            // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.label6.Location = new System.Drawing.Point(3, 14);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(224, 24);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "2 WHEELS";
-            // 
-            // lbl4
-            // 
-            this.lbl4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl4.AutoSize = true;
-            this.lbl4.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lbl4.Location = new System.Drawing.Point(3, 114);
-            this.lbl4.Name = "lbl4";
-            this.lbl4.Size = new System.Drawing.Size(225, 39);
-            this.lbl4.TabIndex = 17;
-            this.lbl4.Text = "000";
-            // 
             // lblRV
             // 
             this.lblRV.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
@@ -1445,42 +1481,7 @@
             this.lblRV.Size = new System.Drawing.Size(77, 39);
             this.lblRV.TabIndex = 11;
             this.lblRV.Text = "000";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.label10.Location = new System.Drawing.Point(3, 121);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(224, 24);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "4 WHEELS";
-            // 
-            // lbl3
-            // 
-            this.lbl3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl3.AutoSize = true;
-            this.lbl3.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lbl3.Location = new System.Drawing.Point(3, 60);
-            this.lbl3.Name = "lbl3";
-            this.lbl3.Size = new System.Drawing.Size(225, 39);
-            this.lbl3.TabIndex = 15;
-            this.lbl3.Text = "000";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.label8.Location = new System.Drawing.Point(3, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(224, 24);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "3 WHEELS";
+            this.lblRV.Click += new System.EventHandler(this.lblRV_Click);
             // 
             // panel6
             // 

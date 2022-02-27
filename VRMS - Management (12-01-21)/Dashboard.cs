@@ -371,7 +371,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT count(owner_id) FROM registered_owners;",con);
+                OdbcCommand cmd = new OdbcCommand("SELECT count(owner_id) FROM registered_vehicles;",con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adptr.Fill(dt);
@@ -382,6 +382,11 @@ namespace VRMS___Management__12_01_21_
             {
                 con.Close();
             }
+        }
+
+        private void lblRV_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
