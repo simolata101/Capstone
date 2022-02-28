@@ -150,13 +150,11 @@ namespace VRMS___Management__12_01_21_
                     con.Open();
                     OdbcCommand cmd = new OdbcCommand();
                     cmd = con.CreateCommand();
-                    cmd.CommandText = "INSERT INTO registered_owners(owner_id,school_id,type,fullname,plate_number,vehicle_type)VALUES(?,?,?,?,?,?)";
+                    cmd.CommandText = "INSERT INTO registered_owners(owner_id,school_id,type,fullname)VALUES(?,?,?,?)";
                     cmd.Parameters.Add("@owner_id", OdbcType.VarChar).Value = label14.Text;
                     cmd.Parameters.Add("@school_id", OdbcType.VarChar).Value = txtSchoolID.Text;
                     cmd.Parameters.Add("@type", OdbcType.VarChar).Value = cmbOtype.Text;
                     cmd.Parameters.Add("@fullname", OdbcType.VarChar).Value = txtFullname.Text;
-                    cmd.Parameters.Add("@plate_number", OdbcType.VarChar).Value = "";
-                    cmd.Parameters.Add("@vehicle_type", OdbcType.VarChar).Value = "";
                     if (cmd.ExecuteNonQuery() == 1)
                     {
                         MessageBox.Show("Owner ID: " + label14.Text, "Data Insert", MessageBoxButtons.OK, MessageBoxIcon.Information);
