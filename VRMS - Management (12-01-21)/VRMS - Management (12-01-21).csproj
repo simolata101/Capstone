@@ -89,6 +89,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAccount.Designer.cs">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddAnotherVehicle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,6 +176,9 @@
     <Compile Include="VAccount.Designer.cs">
       <DependentUpon>VAccount.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAccount.resx">
+      <DependentUpon>AddAccount.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddAnotherVehicle.resx">
       <DependentUpon>AddAnotherVehicle.cs</DependentUpon>
     </EmbeddedResource>
@@ -234,7 +243,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QCU.ico" />
-    <None Include="Resources\ok-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

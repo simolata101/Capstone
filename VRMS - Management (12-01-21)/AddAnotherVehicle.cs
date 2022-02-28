@@ -16,5 +16,10 @@ namespace VRMS___Management__12_01_21_
         {
             InitializeComponent();
         }
+
+        private void txtOperatorID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
