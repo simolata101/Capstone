@@ -20,6 +20,7 @@ namespace VRMS___Management__12_01_21_
         
         private void IDPrint_Load(object sender, EventArgs e)
         {
+            this.TopMost = true;
             printDocument1.DefaultPageSettings.PaperSize = new PaperSize("Custom", 350, 410);
             printPreviewControl1.Zoom = 1.27;
             printPreviewControl1.Document = printDocument1;

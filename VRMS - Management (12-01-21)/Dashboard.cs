@@ -164,9 +164,6 @@ namespace VRMS___Management__12_01_21_
             RV();
             RO();
             VIQ();
-            OIQ();
-            BIQ();
-            VQI();
             Registered();
             //this.reportViewer1.RefreshReport();
         }
@@ -232,68 +229,7 @@ namespace VRMS___Management__12_01_21_
             }
         }
 
-        //OWNERS INSIDE QCU
-        public void OIQ()
-        {
-            try
-            {
-                con.Open();
-                OdbcCommand cmd = new OdbcCommand("SELECT COUNT(*) FROM entry_monitoring WHERE  classification = 'OWNER'", con);
-                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
-                int Rcounts = Convert.ToInt32(cmd.ExecuteScalar());
-                DataTable dt = new DataTable();
-                adptr.Fill(dt);
-                //OIQCount.Text = Rcounts.ToString();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                con.Close();
-            }
-        }
-
-        //BORROWERS INSIDE QCU
-        public void BIQ()
-        {
-            try
-            {
-                con.Open();
-                OdbcCommand cmd = new OdbcCommand("SELECT COUNT(*) FROM entry_monitoring WHERE  classification = 'BORROWER'", con);
-                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
-                int Rcounts = Convert.ToInt32(cmd.ExecuteScalar());
-                DataTable dt = new DataTable();
-                adptr.Fill(dt);
-                //BIQCount.Text = Rcounts.ToString();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                con.Close();
-            }
-        }
-
-        //VISITOR INSIDE QCU
-        public void VQI()
-        {
-            try
-            {
-                con.Open();
-                OdbcCommand cmd = new OdbcCommand("SELECT COUNT(*) FROM entry_monitoring WHERE  classification = 'VISITOR'", con);
-                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
-                int Rcounts = Convert.ToInt32(cmd.ExecuteScalar());
-                DataTable dt = new DataTable();
-                adptr.Fill(dt);
-                //VQICount.Text = Rcounts.ToString();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                con.Close();
-            }
-        }
+        
 
         //OWNER REGISTRATION
         private void btnOR_Click(object sender, EventArgs e)
@@ -392,6 +328,12 @@ namespace VRMS___Management__12_01_21_
         private void lblRV_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnRA_Click(object sender, EventArgs e)
+        {
+            AddAnotherVehicle call = new AddAnotherVehicle();
+            call.Show();
         }
     }
 }

@@ -23,6 +23,7 @@ namespace VRMS___Management__12_01_21_
         //FORM LOAD
         private void ORegistration_Load(object sender, EventArgs e)
         {
+            
             display();
         }
 

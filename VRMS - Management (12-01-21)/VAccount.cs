@@ -63,6 +63,12 @@ namespace VRMS___Management__12_01_21_
             dgvVA.Columns[3].HeaderText = "LEVEL";
         }
 
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddAccount ad = new AddAccount();
+            ad.Show();
+        }
+
 
     }
 }

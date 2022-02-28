@@ -80,7 +80,7 @@ namespace VRMS___Management__12_01_21_
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddVehicle av = new AddVehicle();
+            AddAnotherVehicle av = new AddAnotherVehicle();
             av.ShowDialog();
         }
     }
