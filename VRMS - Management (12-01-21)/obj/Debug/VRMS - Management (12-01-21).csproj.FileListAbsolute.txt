@@ -411,3 +411,6 @@ C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.SOwner.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.VAccount.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csproj.GenerateResource.Cache
+C:\Users\Liongson\source\repos\NewRepo\Capstone\VRMS - Management (12-01-21)\bin\Debug\Quezon City University.exe.config
+C:\Users\Liongson\source\repos\NewRepo\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.exe
+C:\Users\Liongson\source\repos\NewRepo\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.pdb
