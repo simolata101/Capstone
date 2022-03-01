@@ -50,7 +50,6 @@
             this.btnTphoto = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -62,7 +61,6 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.cmbWheels = new System.Windows.Forms.ComboBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.txtModel = new Bunifu.Framework.BunifuCustomTextbox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -101,13 +99,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel8.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel14.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel7.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -426,25 +422,11 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label5);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 166);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(119, 28);
             this.panel8.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(4, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "BRAND";
             // 
             // panel3
             // 
@@ -557,22 +539,11 @@
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.txtModel);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(128, 166);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(191, 28);
             this.panel14.TabIndex = 5;
-            // 
-            // txtModel
-            // 
-            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtModel.BorderColor = System.Drawing.Color.SeaGreen;
-            this.txtModel.Location = new System.Drawing.Point(3, 5);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(185, 20);
-            this.txtModel.TabIndex = 1;
             // 
             // panel15
             // 
@@ -1106,8 +1077,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -1117,8 +1086,6 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel6.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
@@ -1187,7 +1154,6 @@
         private System.Windows.Forms.Panel panel9;
         private Bunifu.Framework.BunifuCustomTextbox txtOwnerID;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel2;
@@ -1199,7 +1165,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.ComboBox cmbWheels;
         private System.Windows.Forms.Panel panel14;
-        private Bunifu.Framework.BunifuCustomTextbox txtModel;
         private System.Windows.Forms.Panel panel15;
         private Guna.UI.WinForms.GunaElipse gunaElipse1;
         private Guna.UI.WinForms.GunaElipse gunaElipse4;

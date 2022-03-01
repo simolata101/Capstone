@@ -66,7 +66,7 @@ namespace VRMS___Management__12_01_21_
                 txtOwnerID.Enabled = false;
                 bunifuCustomTextbox1.Enabled =false;
                 cmbWheels.Enabled = false;
-                txtModel.Enabled=false;
+                
             }
 
             CaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
@@ -281,7 +281,7 @@ namespace VRMS___Management__12_01_21_
                 txtOwnerID.Enabled = true;
                 bunifuCustomTextbox1.Enabled = true;
                 cmbWheels.Enabled = true;
-                txtModel.Enabled = true;
+                
             }
         }
 
@@ -373,7 +373,6 @@ namespace VRMS___Management__12_01_21_
                     }
                     con.Close();
                     bunifuCustomTextbox1.Text = "";
-                    txtModel.Text = "";
                     print.Show();
                 }
             }

@@ -332,8 +332,14 @@ namespace VRMS___Management__12_01_21_
 
         private void btnRA_Click(object sender, EventArgs e)
         {
-            AddAnotherVehicle call = new AddAnotherVehicle();
-            call.Show();
+            pnlDashboard.Hide();
+            pnlShow.Show();
+            pnlShow.Controls.Clear();
+            VRMS___Management__12_01_21_.SOwner OR = new SOwner();
+            OR.TopLevel = false;
+            pnlShow.Controls.Add(OR);
+            OR.Show();
+            
         }
     }
 }

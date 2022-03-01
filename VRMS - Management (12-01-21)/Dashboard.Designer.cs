@@ -66,6 +66,7 @@
             this.tlpDash = new System.Windows.Forms.TableLayoutPanel();
             this.tlpDown = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel13 = new System.Windows.Forms.Panel();
             this.lblDS = new System.Windows.Forms.Label();
             this.pnlRO = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -112,7 +113,6 @@
             this.pnlShow = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.panel13 = new System.Windows.Forms.Panel();
             this.SidePanel.SuspendLayout();
             this.pnlNav.SuspendLayout();
             this.PanelSystemLogs.SuspendLayout();
@@ -938,6 +938,7 @@
             this.tlpDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
             this.tlpDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tlpDown.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tlpDown.Size = new System.Drawing.Size(678, 244);
             this.tlpDown.TabIndex = 1;
             // 
@@ -950,6 +951,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(672, 44);
             this.panel2.TabIndex = 0;
+            // 
+            // panel13
+            // 
+            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel13.Location = new System.Drawing.Point(0, 0);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(672, 210);
+            this.panel13.TabIndex = 13;
+            this.panel13.Visible = false;
             // 
             // lblDS
             // 
@@ -991,7 +1002,7 @@
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 171F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 168F));
             this.tableLayoutPanel2.Size = new System.Drawing.Size(672, 168);
             this.tableLayoutPanel2.TabIndex = 0;
             // 
@@ -1323,7 +1334,7 @@
             this.gunaGauge1.LineEndCap = System.Drawing.Drawing2D.LineCap.Round;
             this.gunaGauge1.LineStartCap = System.Drawing.Drawing2D.LineCap.Round;
             this.gunaGauge1.Location = new System.Drawing.Point(44, -13);
-            this.gunaGauge1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gunaGauge1.Margin = new System.Windows.Forms.Padding(6);
             this.gunaGauge1.MaximumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaGauge1.MinimumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaGauge1.Name = "gunaGauge1";
@@ -1536,16 +1547,6 @@
             // timer
             // 
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
-            // 
-            // panel13
-            // 
-            this.panel13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel13.Location = new System.Drawing.Point(0, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(672, 210);
-            this.panel13.TabIndex = 13;
-            this.panel13.Visible = false;
             // 
             // Dashboard
             // 

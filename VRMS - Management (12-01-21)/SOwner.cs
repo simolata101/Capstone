@@ -32,7 +32,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT qrtext as `VEHICLE ID`, owner_id as `OWNER ID`, plate_num as `PLATE NUMBER`, type as `TYPE OF VEHICLE`, brand as `BRAND` FROM registered_vehicles;", con);
+                OdbcCommand cmd = new OdbcCommand("SELECT qrtext as `VEHICLE ID`, owner_id as `OWNER ID`, plate_num as `PLATE NUMBER`, type as `TYPE OF VEHICLE` FROM registered_vehicles;", con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adptr.Fill(ds, "Empty");
@@ -52,7 +52,7 @@ namespace VRMS___Management__12_01_21_
             OdbcConnection cons = new OdbcConnection("dsn=capstone");
             cons.Open();
             //OdbcCommand commands = new OdbcCommand("select * from t_car_info where platen like '" + txtSearch.Text + "%' OR o_id like '" + txtSearch.Text + "%' OR type like '" + txtSearch.Text + "%'", cons);
-            OdbcCommand commands = new OdbcCommand("SELECT qrtext, owner_id, plate_num, type, brand FROM registered_vehicles WHERE plate_num LIKE '" + txtSearch.Text + "%' OR owner_id LIKE '" + txtSearch.Text + "%' OR type LIKE '" + txtSearch.Text + "%' OR qrtext LIKE '" + txtSearch.Text + "%'", cons);
+            OdbcCommand commands = new OdbcCommand("SELECT qrtext, owner_id, plate_num, type FROM registered_vehicles WHERE plate_num LIKE '" + txtSearch.Text + "%' OR owner_id LIKE '" + txtSearch.Text + "%' OR type LIKE '" + txtSearch.Text + "%' OR qrtext LIKE '" + txtSearch.Text + "%'", cons);
             OdbcDataAdapter adptrr = new OdbcDataAdapter(commands);
             DataTable dt = new DataTable();
             adptrr.Fill(dt);
