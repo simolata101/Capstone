@@ -160,6 +160,8 @@ namespace VRMS___Management__12_01_21_
                         MessageBox.Show("Owner ID: " + label14.Text, "Data Insert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     con.Close();
+
+
                     o_pic();
                     txtSchoolID.Enabled=false;
                     txtFullname.Enabled=false;
@@ -372,6 +374,8 @@ namespace VRMS___Management__12_01_21_
                         MessageBox.Show("Vehicle ID: " + search, "Data Insert", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     con.Close();
+
+
                     bunifuCustomTextbox1.Text = "";
                     print.Show();
                 }

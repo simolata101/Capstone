@@ -441,3 +441,4 @@ C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (1
 C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Properties.Resources.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAccount.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAnotherVehicle.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Microsoft.SqlServer.Types.dll
