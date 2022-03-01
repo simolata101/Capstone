@@ -117,8 +117,13 @@ namespace VRMS___Management__12_01_21_
         private void btnRegistration_Click(object sender, EventArgs e)
         {
             //showSubMenu(PanelRegistration);
-            AddOwner dd = new AddOwner();
-            dd.ShowDialog();
+            pnlDashboard.Hide();
+            pnlShow.Show();
+            pnlShow.Controls.Clear();
+            VRMS___Management__12_01_21_.ORegistration OR = new ORegistration();
+            OR.TopLevel = false;
+            pnlShow.Controls.Add(OR);
+            OR.Show();
         }
 
         //REPORTS

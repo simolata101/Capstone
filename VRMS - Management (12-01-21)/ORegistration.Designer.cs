@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ORegistration));
             this.dgvRegOwn = new Guna.UI2.WinForms.Guna2DataGridView();
             this.pbOwner = new Guna.UI.WinForms.GunaPictureBox();
-            this.pbLicense = new Guna.UI.WinForms.GunaPictureBox();
-            this.lblLicense = new System.Windows.Forms.Label();
             this.lblOwner = new System.Windows.Forms.Label();
             this.btnAdd = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnUpdate = new Guna.UI.WinForms.GunaAdvenceButton();
@@ -56,7 +54,6 @@
             this.Corners = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegOwn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOwner)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLicense)).BeginInit();
             this.pnlBody.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.tlpHead.SuspendLayout();
@@ -66,35 +63,34 @@
             this.tlpContents.SuspendLayout();
             this.tlpShow.SuspendLayout();
             this.pnlOwner.SuspendLayout();
-            this.pnlLicense.SuspendLayout();
             this.SuspendLayout();
             // 
             // dgvRegOwn
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvRegOwn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvRegOwn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRegOwn.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRegOwn.BackgroundColor = System.Drawing.Color.White;
             this.dgvRegOwn.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRegOwn.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRegOwn.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRegOwn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvRegOwn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvRegOwn.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRegOwn.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRegOwn.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvRegOwn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvRegOwn.EnableHeadersVisualStyles = false;
             this.dgvRegOwn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -140,31 +136,6 @@
             this.pbOwner.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbOwner.TabIndex = 1;
             this.pbOwner.TabStop = false;
-            // 
-            // pbLicense
-            // 
-            this.pbLicense.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbLicense.BackColor = System.Drawing.Color.Transparent;
-            this.pbLicense.BaseColor = System.Drawing.Color.White;
-            this.pbLicense.Image = ((System.Drawing.Image)(resources.GetObject("pbLicense.Image")));
-            this.pbLicense.Location = new System.Drawing.Point(0, 32);
-            this.pbLicense.Name = "pbLicense";
-            this.pbLicense.Size = new System.Drawing.Size(271, 162);
-            this.pbLicense.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLicense.TabIndex = 2;
-            this.pbLicense.TabStop = false;
-            // 
-            // lblLicense
-            // 
-            this.lblLicense.AutoSize = true;
-            this.lblLicense.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblLicense.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lblLicense.Location = new System.Drawing.Point(3, 1);
-            this.lblLicense.Name = "lblLicense";
-            this.lblLicense.Size = new System.Drawing.Size(96, 24);
-            this.lblLicense.TabIndex = 8;
-            this.lblLicense.Text = "LICENSE";
             // 
             // lblOwner
             // 
@@ -288,13 +259,13 @@
             // 
             this.header.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.header.AutoSize = true;
-            this.header.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.header.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Bold);
             this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.header.Location = new System.Drawing.Point(0, 6);
+            this.header.Location = new System.Drawing.Point(7, 8);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(237, 24);
+            this.header.Size = new System.Drawing.Size(234, 20);
             this.header.TabIndex = 13;
-            this.header.Text = "REGISTERED OWNERS";
+            this.header.Text = "REGISTERED OPERATOR";
             // 
             // pnlBody
             // 
@@ -452,8 +423,6 @@
             // 
             // pnlLicense
             // 
-            this.pnlLicense.Controls.Add(this.lblLicense);
-            this.pnlLicense.Controls.Add(this.pbLicense);
             this.pnlLicense.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLicense.Location = new System.Drawing.Point(3, 217);
             this.pnlLicense.Name = "pnlLicense";
@@ -481,7 +450,6 @@
             this.Load += new System.EventHandler(this.ORegistration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegOwn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOwner)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLicense)).EndInit();
             this.pnlBody.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.tlpHead.ResumeLayout(false);
@@ -493,8 +461,6 @@
             this.tlpShow.ResumeLayout(false);
             this.pnlOwner.ResumeLayout(false);
             this.pnlOwner.PerformLayout();
-            this.pnlLicense.ResumeLayout(false);
-            this.pnlLicense.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -503,8 +469,6 @@
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvRegOwn;
         private Guna.UI.WinForms.GunaPictureBox pbOwner;
-        private Guna.UI.WinForms.GunaPictureBox pbLicense;
-        public System.Windows.Forms.Label lblLicense;
         public System.Windows.Forms.Label lblOwner;
         private Guna.UI.WinForms.GunaAdvenceButton btnAdd;
         private Guna.UI.WinForms.GunaAdvenceButton btnUpdate;

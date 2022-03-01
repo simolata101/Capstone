@@ -31,7 +31,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT owner_id as 'OWNER ID', school_id as 'SCHOOL ID', fullname as 'FULLNAME', type as 'OWNER TYPE', birthdate as 'BIRTHDATE', contact as 'CONTACT', address as 'ADDRESS', email as 'EMAIL' FROM registered_owners;", con);
+                OdbcCommand cmd = new OdbcCommand("SELECT owner_id as 'OWNER ID', school_id as 'SCHOOL ID', fullname as 'FULLNAME', type as 'OWNER TYPE' FROM registered_owners;", con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adptr.Fill(ds, "Empty");
@@ -50,7 +50,7 @@ namespace VRMS___Management__12_01_21_
         {
             OdbcConnection cons = new OdbcConnection("dsn=capstone");
             cons.Open();
-            OdbcCommand commands = new OdbcCommand("SELECT owner_id, school_id, fullname, type, birthdate, contact, address, email FROM registered_owners WHERE owner_id LIKE '%" + txtSearch.Text + "%' OR school_id LIKE '%" + txtSearch.Text + "%' OR fullname LIKE '%" + txtSearch.Text + "%'", cons);
+            OdbcCommand commands = new OdbcCommand("SELECT owner_id, school_id, fullname, type FROM registered_owners WHERE owner_id LIKE '%" + txtSearch.Text + "%' OR school_id LIKE '%" + txtSearch.Text + "%' OR fullname LIKE '%" + txtSearch.Text + "%'", cons);
             OdbcDataAdapter adptrr = new OdbcDataAdapter(commands);
             DataTable dt = new DataTable();
             adptrr.Fill(dt);
