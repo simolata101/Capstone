@@ -116,14 +116,7 @@ namespace VRMS___Management__12_01_21_
         //OWNER REGISTRATION
         private void btnRegistration_Click(object sender, EventArgs e)
         {
-            //showSubMenu(PanelRegistration);
-            pnlDashboard.Hide();
-            pnlShow.Show();
-            pnlShow.Controls.Clear();
-            VRMS___Management__12_01_21_.ORegistration OR = new ORegistration();
-            OR.TopLevel = false;
-            pnlShow.Controls.Add(OR);
-            OR.Show();
+            showSubMenu(PanelRegistration);
         }
 
         //REPORTS
@@ -165,6 +158,8 @@ namespace VRMS___Management__12_01_21_
             RO();
             VIQ();
             Registered();
+            TwoWheels();
+            FourWheels();
             //this.reportViewer1.RefreshReport();
         }
 
@@ -228,6 +223,9 @@ namespace VRMS___Management__12_01_21_
                 con.Close();
             }
         }
+
+
+
 
         
 
@@ -325,6 +323,42 @@ namespace VRMS___Management__12_01_21_
             }
         }
 
+
+        public void TwoWheels()
+        {
+            try
+            {
+                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM registered_vehicles WHERE type LIKE '2 wheels%' ;", con);
+                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adptr.Fill(dt);
+                lbl2.Text = dt.Rows[0][0].ToString();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+            }
+        }
+
+        public void FourWheels()
+        {
+            try
+            {
+                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM registered_vehicles WHERE type LIKE '4 wheels%' ;", con);
+                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adptr.Fill(dt);
+                lbl4.Text = dt.Rows[0][0].ToString();
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+            }
+        }
+
+
         private void lblRV_Click(object sender, EventArgs e)
         {
 
@@ -340,6 +374,11 @@ namespace VRMS___Management__12_01_21_
             pnlShow.Controls.Add(OR);
             OR.Show();
             
+        }
+
+        private void btnRegistration_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
