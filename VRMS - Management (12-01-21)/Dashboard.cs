@@ -112,6 +112,7 @@ namespace VRMS___Management__12_01_21_
             Loader();
             pnlDashboard.Show();
             pnlShow.Hide();
+
         }
 
         //OWNER REGISTRATION
@@ -161,6 +162,7 @@ namespace VRMS___Management__12_01_21_
             Registered();
             TwoWheels();
             FourWheels();
+            INSIDER();
             //this.reportViewer1.RefreshReport();
         }
 
@@ -172,6 +174,31 @@ namespace VRMS___Management__12_01_21_
             Registered();
             TwoWheels();
             FourWheels();
+            INSIDER();
+        }
+
+
+        public void INSIDER()
+        {
+            {
+                try
+                {
+                    OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM entry_monitoring WHERE event LIKE 'TIME IN%' ;", con);
+                    OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adptr.Fill(dt);
+                    lblvInside.Text = dt.Rows[0][0].ToString();
+                    //string gg1
+                    //int gg = lblvInside.Text;
+                    //gunaGauge1.Value = (gg / gg) * 100 ;
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    con.Close();
+                }
+            }
+          
         }
 
 
