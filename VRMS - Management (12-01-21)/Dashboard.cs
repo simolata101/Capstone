@@ -109,6 +109,7 @@ namespace VRMS___Management__12_01_21_
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             hideSubMenu();
+            Loader();
             pnlDashboard.Show();
             pnlShow.Hide();
         }
@@ -162,6 +163,17 @@ namespace VRMS___Management__12_01_21_
             FourWheels();
             //this.reportViewer1.RefreshReport();
         }
+
+        public void Loader() 
+        {
+            RV();
+            RO();
+            VIQ();
+            Registered();
+            TwoWheels();
+            FourWheels();
+        }
+
 
         //REGISTERED VEHICLE COUNT
         public void RV()
