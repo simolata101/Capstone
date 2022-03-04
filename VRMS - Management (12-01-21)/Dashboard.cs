@@ -178,6 +178,8 @@ namespace VRMS___Management__12_01_21_
         }
 
 
+
+
         public void INSIDER()
         {
             {
@@ -187,16 +189,24 @@ namespace VRMS___Management__12_01_21_
                     OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adptr.Fill(dt);
+                    OdbcCommand cmd2 = new OdbcCommand("SELECT count(id) FROM entry_monitoring;", con);
+                    OdbcDataAdapter adptr2 = new OdbcDataAdapter(cmd2);
+                    DataTable dt2 = new DataTable();
+                    adptr.Fill(dt2);
                     lblvInside.Text = dt.Rows[0][0].ToString();
-                    //string gg1
-                    //int gg = lblvInside.Text;
-                    //gunaGauge1.Value = (gg / gg) * 100 ;
+                    lblInsideAll.Text = dt2.Rows[0][0].ToString();
+                    string gg2 = lblInsideAll.Text;
+                    string gg = lblvInside.Text;
+                    int result = Int32.Parse(gg);
+                    int resultAllentered = Int32.Parse(gg2);
+                    gunaGauge1.Value = (result / resultAllentered) * 100;
                     con.Close();
                 }
                 catch (Exception ex)
                 {
                     con.Close();
                 }
+
             }
           
         }
@@ -367,7 +377,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM registered_vehicles WHERE type LIKE '2 wheels%' ;", con);
+                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM entry_monitoring WHERE type LIKE '2 wheels%' ;", con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adptr.Fill(dt);
@@ -384,7 +394,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM registered_vehicles WHERE type LIKE '4 wheels%' ;", con);
+                OdbcCommand cmd = new OdbcCommand("SELECT count(id) FROM entry_monitoring WHERE type LIKE '4 wheels%' ;", con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 adptr.Fill(dt);

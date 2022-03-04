@@ -71,6 +71,7 @@
             this.pnlvInside = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.tlpvInside = new System.Windows.Forms.TableLayoutPanel();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.lblInsideAll = new System.Windows.Forms.Label();
             this.lblvInside = new System.Windows.Forms.Label();
             this.gunaGauge1 = new Guna.UI.WinForms.GunaGauge();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -689,6 +690,7 @@
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.lblInsideAll);
             this.panel7.Controls.Add(this.lblvInside);
             this.panel7.Controls.Add(this.gunaGauge1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -697,13 +699,25 @@
             this.panel7.Size = new System.Drawing.Size(252, 184);
             this.panel7.TabIndex = 0;
             // 
+            // lblInsideAll
+            // 
+            this.lblInsideAll.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblInsideAll.AutoSize = true;
+            this.lblInsideAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInsideAll.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.lblInsideAll.Location = new System.Drawing.Point(153, 143);
+            this.lblInsideAll.Name = "lblInsideAll";
+            this.lblInsideAll.Size = new System.Drawing.Size(77, 39);
+            this.lblInsideAll.TabIndex = 11;
+            this.lblInsideAll.Text = "000";
+            // 
             // lblvInside
             // 
-            this.lblvInside.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblvInside.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblvInside.AutoSize = true;
             this.lblvInside.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblvInside.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lblvInside.Location = new System.Drawing.Point(163, 120);
+            this.lblvInside.Location = new System.Drawing.Point(34, 144);
             this.lblvInside.Name = "lblvInside";
             this.lblvInside.Size = new System.Drawing.Size(77, 39);
             this.lblvInside.TabIndex = 10;
@@ -1813,5 +1827,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnOR;
         private Guna.UI.WinForms.GunaAdvenceButton btnRegistration;
         private Guna.UI.WinForms.GunaAdvenceButton btnDashboard;
+        public System.Windows.Forms.Label lblInsideAll;
     }
 }
