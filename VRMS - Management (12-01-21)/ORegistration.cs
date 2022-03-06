@@ -44,6 +44,8 @@ namespace VRMS___Management__12_01_21_
                 MessageBox.Show(ex.Message);
                 con.Close();
             }
+
+
         }
 
         //SEARCH
@@ -170,6 +172,11 @@ namespace VRMS___Management__12_01_21_
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void lblShowID_Click(object sender, EventArgs e)
+        {
+
         }
 
     }

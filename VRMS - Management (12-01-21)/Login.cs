@@ -78,68 +78,87 @@ namespace VRMS___Management__12_01_21_
         //LOGIN
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            VRMS___Management__12_01_21_.Dashboard s = new Dashboard();
-            VRMS___Management__12_01_21_.LHistory LH = new LHistory();
-            try
+
+            if (txtUser.Text.Length == 0 || txtPass.Text.Length == 0)
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT fullname, level, admin_id, status FROM accounts WHERE username='" + txtUser.Text + "' AND password='" + txtPass.Text + "';", con);
-                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                adptr.Fill(dt);
-                lblName.Text = dt.Rows[0][0].ToString();
-                lblAccess.Text = dt.Rows[0][1].ToString();
+                MessageBox.Show(" Username/Password cannot be blank");
+            }
 
-                s.lblCurrent.Text = dt.Rows[0][0].ToString();
-               // LH.lblCurrent.Text = dt.Rows[0][0].ToString();
+            else if (txtUser.Text.Length <= 4 || txtPass.Text.Length <= 4)
+            {
+                MessageBox.Show(" Username/Password cannot be less 4 Characters");
 
-                lblAdminID.Text = dt.Rows[0][2].ToString();
+            }
 
-                s.lblAdminID.Text = dt.Rows[0][2].ToString();
-                //LH.lblAdminID.Text = dt.Rows[0][0].ToString();
+            else
+            {
 
-                lblStatus.Text = dt.Rows[0][3].ToString();
-                con.Close();
-
-                if (lblStatus.Text == "ONLINE")
+                VRMS___Management__12_01_21_.Dashboard s = new Dashboard();
+                VRMS___Management__12_01_21_.LHistory LH = new LHistory();
+                try
                 {
-                    MessageBox.Show("This account is already login", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    txtUser.Text = "";
-                    txtPass.Text = "";
-                }
-                else
-                {
-                    if (lblAccess.Text == "OSAS")
+                    OdbcCommand cmd = new OdbcCommand("SELECT fullname, level, admin_id, status FROM accounts WHERE username='" + txtUser.Text + "' AND password='" + txtPass.Text + "';", con);
+                    OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adptr.Fill(dt);
+                    lblName.Text = dt.Rows[0][0].ToString();
+                    lblAccess.Text = dt.Rows[0][1].ToString();
+
+                    s.lblCurrent.Text = dt.Rows[0][0].ToString();
+                    // LH.lblCurrent.Text = dt.Rows[0][0].ToString();
+
+                    lblAdminID.Text = dt.Rows[0][2].ToString();
+
+                    s.lblAdminID.Text = dt.Rows[0][2].ToString();
+                    //LH.lblAdminID.Text = dt.Rows[0][0].ToString();
+
+                    lblStatus.Text = dt.Rows[0][3].ToString();
+                    con.Close();
+
+
+
+                    if (lblStatus.Text == "ONLINE")
                     {
-                        try
+                        MessageBox.Show("This account is already login", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        txtUser.Text = "";
+                        txtPass.Text = "";
+                    }
+                    else
+                    {
+                        if (lblAccess.Text == "OSAS")
                         {
-                            s.Show();
-                            this.Hide();
-                            con.Open();
-                            OdbcCommand cmd1 = new OdbcCommand();
-                            cmd1 = con.CreateCommand();
-                            cmd1.CommandText = "INSERT INTO loghistory(admin_id, fullname, access, date, time, event) VALUES (?, ?, ?, ?, ?, ?)";
-                            cmd1.Parameters.Add("@admin_id", OdbcType.VarChar).Value = dt.Rows[0][2].ToString();
-                            cmd1.Parameters.Add("@fullname", OdbcType.VarChar).Value = dt.Rows[0][0].ToString();
-                            cmd1.Parameters.Add("@access", OdbcType.VarChar).Value = "OSAS";
-                            cmd1.Parameters.Add("@date", OdbcType.VarChar).Value = lblDate.Text;
-                            cmd1.Parameters.Add("@time", OdbcType.VarChar).Value = lblTime.Text;
-                            cmd1.Parameters.Add("@event", OdbcType.VarChar).Value = "LOGIN";
-                            cmd1.ExecuteNonQuery();
-                            con.Close();
-                            login();
-                        }
+                            try
+                            {
+                                s.Show();
+                                this.Hide();
+                                con.Open();
+                                OdbcCommand cmd1 = new OdbcCommand();
+                                cmd1 = con.CreateCommand();
+                                cmd1.CommandText = "INSERT INTO loghistory(admin_id, fullname, access, date, time, event) VALUES (?, ?, ?, ?, ?, ?)";
+                                cmd1.Parameters.Add("@admin_id", OdbcType.VarChar).Value = dt.Rows[0][2].ToString();
+                                cmd1.Parameters.Add("@fullname", OdbcType.VarChar).Value = dt.Rows[0][0].ToString();
+                                cmd1.Parameters.Add("@access", OdbcType.VarChar).Value = "OSAS";
+                                cmd1.Parameters.Add("@date", OdbcType.VarChar).Value = lblDate.Text;
+                                cmd1.Parameters.Add("@time", OdbcType.VarChar).Value = lblTime.Text;
+                                cmd1.Parameters.Add("@event", OdbcType.VarChar).Value = "LOGIN";
+                                cmd1.ExecuteNonQuery();
+                                con.Close();
+                                login();
+                            }
 
-                        catch (Exception ex)
-                        {
-                            con.Close();
+
+                            catch (Exception ex)
+                            {
+                                con.Close();
+                            }
                         }
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                con.Close();
-                MessageBox.Show(ex.Message);
+                catch (Exception ex)
+                {
+                    con.Close();
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 

@@ -429,5 +429,15 @@ namespace VRMS___Management__12_01_21_
         {
 
         }
+
+        private void tlpDash_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnRV_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

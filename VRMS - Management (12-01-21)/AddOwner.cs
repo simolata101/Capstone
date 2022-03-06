@@ -207,7 +207,7 @@ namespace VRMS___Management__12_01_21_
                 OdbcCommand cmd = new OdbcCommand();
                 cmd = con.CreateCommand();
                 cmd.CommandText = "INSERT INTO owner_pic(owner_id,img)VALUES(?,?)";
-                cmd.Parameters.Add("@o_id", OdbcType.VarChar).Value = textBox1.Text;
+                cmd.Parameters.Add("@o_id", OdbcType.VarChar).Value = "22-" + textBox1.Text;
                 cmd.Parameters.Add("@email", OdbcType.Image).Value = photo4;
                 cmd.ExecuteNonQuery();
                 con.Close();
