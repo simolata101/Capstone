@@ -413,6 +413,25 @@ C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (1
 C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.xml
 C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\QCU\Documents\Visual Studio 2013\Projects\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Properties.Resources.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.exe
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddVehicle.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAccount.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAnotherVehicle.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddOwner.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ActivityTrails.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Dashboard.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.DeleteForm.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.IDPrint.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.LHistory.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.LoadingScreen.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Login.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ORegistration.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.PAccount.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Properties.Resources.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.SOwner.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.VAccount.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csproj.GenerateResource.Cache
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.pdb
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Quezon City University.exe.config
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Quezon City University.exe
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Quezon City University.pdb
@@ -422,21 +441,4 @@ C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.xml
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.xml
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.DirectShow.xml
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAccount.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddAnotherVehicle.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddOwner.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.AddVehicle.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ActivityTrails.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Dashboard.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.DeleteForm.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.IDPrint.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.LHistory.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Login.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ORegistration.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.PAccount.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Properties.Resources.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.SOwner.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.VAccount.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csproj.GenerateResource.Cache
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.exe
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\Quezon City University.pdb
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csprojResolveAssemblyReference.cache

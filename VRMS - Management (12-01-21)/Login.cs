@@ -78,6 +78,7 @@ namespace VRMS___Management__12_01_21_
         //LOGIN
         private void btnLogin_Click(object sender, EventArgs e)
         {
+           
 
             if (txtUser.Text.Length == 0 || txtPass.Text.Length == 0)
             {
@@ -257,6 +258,7 @@ namespace VRMS___Management__12_01_21_
             {
                 VRMS___Management__12_01_21_.Dashboard s = new Dashboard();
                 VRMS___Management__12_01_21_.LHistory LH = new LHistory();
+                VRMS___Management__12_01_21_.LoadingScreen ls = new LoadingScreen();
                 try
                 {
                     OdbcCommand cmd = new OdbcCommand("SELECT fullname, level, admin_id, status FROM accounts WHERE username='" + txtUser.Text + "' AND password='" + txtPass.Text + "';", con);
@@ -289,7 +291,11 @@ namespace VRMS___Management__12_01_21_
                         {
                             try
                             {
+                                ls.TopLevel = true;
                                 s.Show();
+                                ls.ShowDialog();
+                                
+                                
                                 this.Hide();
                                 con.Open();
                                 OdbcCommand cmd1 = new OdbcCommand();
