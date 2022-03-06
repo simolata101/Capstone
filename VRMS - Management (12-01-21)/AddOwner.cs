@@ -377,6 +377,9 @@ namespace VRMS___Management__12_01_21_
 
 
                     bunifuCustomTextbox1.Text = "";
+
+                    print.lblID.Text = label14.Text;
+                    print.lblFullname.Text = nameVal.Text;
                     print.Show();
                 }
             }

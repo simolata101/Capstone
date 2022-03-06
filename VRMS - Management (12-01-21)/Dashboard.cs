@@ -189,11 +189,12 @@ namespace VRMS___Management__12_01_21_
                     OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adptr.Fill(dt);
-                    con.Close();
-                    OdbcCommand cmd2 = new OdbcCommand("SELECT count(*) FROM exit_monitoring WHERE event LIKE 'EXIT%' ;", con);
+                    //OdbcCommand cmd2 = new OdbcCommand("SELECT count(*) FROM entry_monitoring UNION SELECT count(*) FROM exit_monitoring;  ;", con);
+                    OdbcCommand cmd2 = new OdbcCommand("SELECT count(id) FROM exit_monitoring WHERE event LIKE 'EXIT%' ;", con);
                     OdbcDataAdapter adptr2 = new OdbcDataAdapter(cmd2);
                     DataTable dt2 = new DataTable();
                     adptr2.Fill(dt2);
+
                     lblvInside.Text = dt.Rows[0][0].ToString();
                     lblInsideAll.Text = dt2.Rows[0][0].ToString();
 
@@ -201,18 +202,25 @@ namespace VRMS___Management__12_01_21_
                     string gg = lblvInside.Text;
                     string gg2 = lblInsideAll.Text;
 
-                     int result = Int32.Parse(gg); //2
-                    int resultAllentered = Int32.Parse(gg2); //5
+                     int result = int.Parse(gg); //3
+                     int resultAllentered = int.Parse(gg2) + result ; //6
 
-                    int total, total2, total3;
-                    total = (result + resultAllentered); //7
-                    total2 = (total / result); //3.5
-                    total3 = (total2 * 100) / 10;
+                    int total, total2, total3, total4;
+                    total = result + resultAllentered; //9
+                    total2 = (total / result); //3
+                    total3 = total2 * 100 ;
+                    total4 = total3 / resultAllentered;
 
                     lblInsideAll.Text = total.ToString();
 
-                    gunaGauge1.Value = total3;
+                    gaugeIN.Value = total4;
+                    
+
+                    lblInsideAll.Text = resultAllentered.ToString();
+                    
                     con.Close();
+
+                    
 
                     /*string gg = lblvInside.Text;
                     string gg2 = lblInsideAll.Text;

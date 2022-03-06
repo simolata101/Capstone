@@ -126,9 +126,9 @@
             this.lblHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHeader.Location = new System.Drawing.Point(85, 9);
             this.lblHeader.Name = "lblHeader";
-            this.lblHeader.Size = new System.Drawing.Size(680, 25);
+            this.lblHeader.Size = new System.Drawing.Size(398, 25);
             this.lblHeader.TabIndex = 0;
-            this.lblHeader.Text = "Vehicle Ownership Informaton and Record Management System";
+            this.lblHeader.Text = "Vehicle Record Management System";
             // 
             // pnlBody
             // 

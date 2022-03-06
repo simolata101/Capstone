@@ -73,7 +73,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblInsideAll = new System.Windows.Forms.Label();
             this.lblvInside = new System.Windows.Forms.Label();
-            this.gunaGauge1 = new Guna.UI.WinForms.GunaGauge();
+            this.gaugeIN = new Guna.UI.WinForms.GunaGauge();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
@@ -693,7 +693,7 @@
             // 
             this.panel7.Controls.Add(this.lblInsideAll);
             this.panel7.Controls.Add(this.lblvInside);
-            this.panel7.Controls.Add(this.gunaGauge1);
+            this.panel7.Controls.Add(this.gaugeIN);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(3, 3);
             this.panel7.Name = "panel7";
@@ -724,25 +724,24 @@
             this.lblvInside.TabIndex = 10;
             this.lblvInside.Text = "000";
             // 
-            // gunaGauge1
+            // gaugeIN
             // 
-            this.gunaGauge1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaGauge1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGauge1.BackThickness = 50;
-            this.gunaGauge1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
-            this.gunaGauge1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaGauge1.LineEndCap = System.Drawing.Drawing2D.LineCap.Round;
-            this.gunaGauge1.LineStartCap = System.Drawing.Drawing2D.LineCap.Round;
-            this.gunaGauge1.Location = new System.Drawing.Point(44, -13);
-            this.gunaGauge1.Margin = new System.Windows.Forms.Padding(6);
-            this.gunaGauge1.MaximumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGauge1.MinimumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaGauge1.Name = "gunaGauge1";
-            this.gunaGauge1.ShowText = false;
-            this.gunaGauge1.Size = new System.Drawing.Size(171, 182);
-            this.gunaGauge1.TabIndex = 0;
-            this.gunaGauge1.Thickness = 40;
-            this.gunaGauge1.Value = 50;
+            this.gaugeIN.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.gaugeIN.BackColor = System.Drawing.Color.Transparent;
+            this.gaugeIN.BackThickness = 50;
+            this.gaugeIN.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            this.gaugeIN.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gaugeIN.LineEndCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.gaugeIN.LineStartCap = System.Drawing.Drawing2D.LineCap.Round;
+            this.gaugeIN.Location = new System.Drawing.Point(44, -12);
+            this.gaugeIN.Margin = new System.Windows.Forms.Padding(6);
+            this.gaugeIN.MaximumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gaugeIN.MinimumColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gaugeIN.Name = "gaugeIN";
+            this.gaugeIN.ShowText = false;
+            this.gaugeIN.Size = new System.Drawing.Size(171, 182);
+            this.gaugeIN.TabIndex = 0;
+            this.gaugeIN.Thickness = 40;
             // 
             // panel8
             // 
@@ -1767,7 +1766,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel pnlvInside;
         private Guna.UI2.WinForms.Guna2GradientPanel nlRV;
         public System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaGauge gunaGauge1;
         public System.Windows.Forms.Label lblvInside;
         private System.Windows.Forms.TableLayoutPanel tlpvInside;
         private System.Windows.Forms.Panel panel7;
@@ -1830,5 +1828,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnRegistration;
         private Guna.UI.WinForms.GunaAdvenceButton btnDashboard;
         public System.Windows.Forms.Label lblInsideAll;
+        private Guna.UI.WinForms.GunaGauge gaugeIN;
     }
 }
