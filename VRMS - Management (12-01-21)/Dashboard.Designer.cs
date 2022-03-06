@@ -53,6 +53,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Separator2 = new Guna.UI2.WinForms.Guna2Separator();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -82,6 +83,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.lblRV = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -90,33 +92,31 @@
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.pnlNav = new Guna.UI.WinForms.GunaElipsePanel();
+            this.btnLogout = new Guna.UI.WinForms.GunaAdvenceButton();
             this.PanelSystemLogs = new System.Windows.Forms.Panel();
             this.panel5 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.PanelAccounts = new System.Windows.Forms.Panel();
-            this.panel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.PanelReports = new System.Windows.Forms.Panel();
-            this.panel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.PanelRegistration = new System.Windows.Forms.Panel();
-            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.SidePanel = new System.Windows.Forms.Panel();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.btnLogout = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnAT = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnLLH = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSystemLogs = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.PanelAccounts = new System.Windows.Forms.Panel();
+            this.panel4 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnVA = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnPA = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnAccounts = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.PanelReports = new System.Windows.Forms.Panel();
+            this.panel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnRA = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnLL = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRV = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRO = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnReports = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.PanelRegistration = new System.Windows.Forms.Panel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.btnVR = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnOR = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnRegistration = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnDashboard = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.SidePanel = new System.Windows.Forms.Panel();
             this.QCU = new Guna.UI.WinForms.GunaPictureBox();
             this.MainPanel.SuspendLayout();
             this.pnlBody.SuspendLayout();
@@ -131,6 +131,7 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
@@ -146,6 +147,7 @@
             this.tlpRV.SuspendLayout();
             this.panel9.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.panel10.SuspendLayout();
             this.panel6.SuspendLayout();
             this.pnlNav.SuspendLayout();
@@ -158,8 +160,6 @@
             this.PanelRegistration.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.SidePanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QCU)).BeginInit();
             this.SuspendLayout();
             // 
@@ -466,6 +466,19 @@
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel5.Size = new System.Drawing.Size(314, 86);
             this.tableLayoutPanel5.TabIndex = 13;
+            // 
+            // gunaPictureBox2
+            // 
+            this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
+            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 3);
+            this.gunaPictureBox2.Name = "gunaPictureBox2";
+            this.gunaPictureBox2.Size = new System.Drawing.Size(88, 80);
+            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox2.TabIndex = 13;
+            this.gunaPictureBox2.TabStop = false;
             // 
             // panel11
             // 
@@ -849,6 +862,19 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(376, 86);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
+            // gunaPictureBox1
+            // 
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
+            this.gunaPictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.gunaPictureBox1.Name = "gunaPictureBox1";
+            this.gunaPictureBox1.Size = new System.Drawing.Size(106, 80);
+            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox1.TabIndex = 13;
+            this.gunaPictureBox1.TabStop = false;
+            // 
             // panel10
             // 
             this.panel10.Controls.Add(this.lblRV);
@@ -945,155 +971,6 @@
             this.pnlNav.Size = new System.Drawing.Size(300, 370);
             this.pnlNav.TabIndex = 1;
             // 
-            // PanelSystemLogs
-            // 
-            this.PanelSystemLogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.PanelSystemLogs.Controls.Add(this.panel5);
-            this.PanelSystemLogs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelSystemLogs.Location = new System.Drawing.Point(0, 630);
-            this.PanelSystemLogs.Name = "PanelSystemLogs";
-            this.PanelSystemLogs.Size = new System.Drawing.Size(283, 110);
-            this.PanelSystemLogs.TabIndex = 26;
-            this.PanelSystemLogs.Visible = false;
-            // 
-            // panel5
-            // 
-            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel5.BorderRadius = 10;
-            this.panel5.Controls.Add(this.btnAT);
-            this.panel5.Controls.Add(this.btnLLH);
-            this.panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel5.Location = new System.Drawing.Point(6, 10);
-            this.panel5.Name = "panel5";
-            this.panel5.ShadowDecoration.Parent = this.panel5;
-            this.panel5.Size = new System.Drawing.Size(270, 90);
-            this.panel5.TabIndex = 7;
-            // 
-            // PanelAccounts
-            // 
-            this.PanelAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.PanelAccounts.Controls.Add(this.panel4);
-            this.PanelAccounts.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelAccounts.Location = new System.Drawing.Point(0, 480);
-            this.PanelAccounts.Name = "PanelAccounts";
-            this.PanelAccounts.Size = new System.Drawing.Size(283, 110);
-            this.PanelAccounts.TabIndex = 24;
-            this.PanelAccounts.Visible = false;
-            // 
-            // panel4
-            // 
-            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel4.BorderRadius = 10;
-            this.panel4.Controls.Add(this.btnVA);
-            this.panel4.Controls.Add(this.btnPA);
-            this.panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel4.Location = new System.Drawing.Point(6, 10);
-            this.panel4.Name = "panel4";
-            this.panel4.ShadowDecoration.Parent = this.panel4;
-            this.panel4.Size = new System.Drawing.Size(270, 90);
-            this.panel4.TabIndex = 8;
-            // 
-            // PanelReports
-            // 
-            this.PanelReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.PanelReports.Controls.Add(this.panel3);
-            this.PanelReports.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelReports.Location = new System.Drawing.Point(0, 230);
-            this.PanelReports.Name = "PanelReports";
-            this.PanelReports.Size = new System.Drawing.Size(283, 210);
-            this.PanelReports.TabIndex = 22;
-            this.PanelReports.Visible = false;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel3.BorderRadius = 10;
-            this.panel3.Controls.Add(this.btnRA);
-            this.panel3.Controls.Add(this.btnLL);
-            this.panel3.Controls.Add(this.btnRV);
-            this.panel3.Controls.Add(this.btnRO);
-            this.panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.panel3.Location = new System.Drawing.Point(6, 10);
-            this.panel3.Name = "panel3";
-            this.panel3.ShadowDecoration.Parent = this.panel3;
-            this.panel3.Size = new System.Drawing.Size(270, 190);
-            this.panel3.TabIndex = 7;
-            // 
-            // PanelRegistration
-            // 
-            this.PanelRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.PanelRegistration.Controls.Add(this.guna2GradientPanel1);
-            this.PanelRegistration.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelRegistration.Location = new System.Drawing.Point(0, 80);
-            this.PanelRegistration.Name = "PanelRegistration";
-            this.PanelRegistration.Size = new System.Drawing.Size(283, 110);
-            this.PanelRegistration.TabIndex = 20;
-            this.PanelRegistration.Visible = false;
-            // 
-            // guna2GradientPanel1
-            // 
-            this.guna2GradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2GradientPanel1.BorderRadius = 10;
-            this.guna2GradientPanel1.Controls.Add(this.btnVR);
-            this.guna2GradientPanel1.Controls.Add(this.btnOR);
-            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(5, 10);
-            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
-            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
-            this.guna2GradientPanel1.Size = new System.Drawing.Size(270, 90);
-            this.guna2GradientPanel1.TabIndex = 6;
-            // 
-            // SidePanel
-            // 
-            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
-            this.SidePanel.Controls.Add(this.pnlNav);
-            this.SidePanel.Controls.Add(this.QCU);
-            this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.SidePanel.Location = new System.Drawing.Point(0, 0);
-            this.SidePanel.Name = "SidePanel";
-            this.SidePanel.Size = new System.Drawing.Size(300, 640);
-            this.SidePanel.TabIndex = 9;
-            // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(3, 3);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(88, 80);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox2.TabIndex = 13;
-            this.gunaPictureBox2.TabStop = false;
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(3, 3);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(106, 80);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 13;
-            this.gunaPictureBox1.TabStop = false;
-            // 
             // btnLogout
             // 
             this.btnLogout.AnimationHoverSpeed = 0.07F;
@@ -1128,6 +1005,34 @@
             this.btnLogout.Text = "LOGOUT";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
+            // PanelSystemLogs
+            // 
+            this.PanelSystemLogs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.PanelSystemLogs.Controls.Add(this.panel5);
+            this.PanelSystemLogs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelSystemLogs.Location = new System.Drawing.Point(0, 630);
+            this.PanelSystemLogs.Name = "PanelSystemLogs";
+            this.PanelSystemLogs.Size = new System.Drawing.Size(283, 110);
+            this.PanelSystemLogs.TabIndex = 26;
+            this.PanelSystemLogs.Visible = false;
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel5.BorderRadius = 10;
+            this.panel5.Controls.Add(this.btnAT);
+            this.panel5.Controls.Add(this.btnLLH);
+            this.panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel5.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel5.Location = new System.Drawing.Point(6, 10);
+            this.panel5.Name = "panel5";
+            this.panel5.ShadowDecoration.Parent = this.panel5;
+            this.panel5.Size = new System.Drawing.Size(270, 90);
+            this.panel5.TabIndex = 7;
             // 
             // btnAT
             // 
@@ -1234,6 +1139,33 @@
             this.btnSystemLogs.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSystemLogs.Click += new System.EventHandler(this.btnSystemLogs_Click);
             // 
+            // PanelAccounts
+            // 
+            this.PanelAccounts.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.PanelAccounts.Controls.Add(this.panel4);
+            this.PanelAccounts.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelAccounts.Location = new System.Drawing.Point(0, 480);
+            this.PanelAccounts.Name = "PanelAccounts";
+            this.PanelAccounts.Size = new System.Drawing.Size(283, 110);
+            this.PanelAccounts.TabIndex = 24;
+            this.PanelAccounts.Visible = false;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.BorderRadius = 10;
+            this.panel4.Controls.Add(this.btnVA);
+            this.panel4.Controls.Add(this.btnPA);
+            this.panel4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel4.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel4.Location = new System.Drawing.Point(6, 10);
+            this.panel4.Name = "panel4";
+            this.panel4.ShadowDecoration.Parent = this.panel4;
+            this.panel4.Size = new System.Drawing.Size(270, 90);
+            this.panel4.TabIndex = 8;
+            // 
             // btnVA
             // 
             this.btnVA.AnimationHoverSpeed = 0.07F;
@@ -1339,6 +1271,36 @@
             this.btnAccounts.Text = "ACCOUNTS";
             this.btnAccounts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAccounts.Click += new System.EventHandler(this.btnAccounts_Click);
+            // 
+            // PanelReports
+            // 
+            this.PanelReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.PanelReports.Controls.Add(this.panel3);
+            this.PanelReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelReports.Location = new System.Drawing.Point(0, 230);
+            this.PanelReports.Name = "PanelReports";
+            this.PanelReports.Size = new System.Drawing.Size(283, 210);
+            this.PanelReports.TabIndex = 22;
+            this.PanelReports.Visible = false;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel3.BorderRadius = 10;
+            this.panel3.Controls.Add(this.btnRA);
+            this.panel3.Controls.Add(this.btnLL);
+            this.panel3.Controls.Add(this.btnRV);
+            this.panel3.Controls.Add(this.btnRO);
+            this.panel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.panel3.Location = new System.Drawing.Point(6, 10);
+            this.panel3.Name = "panel3";
+            this.panel3.ShadowDecoration.Parent = this.panel3;
+            this.panel3.Size = new System.Drawing.Size(270, 190);
+            this.panel3.TabIndex = 7;
             // 
             // btnRA
             // 
@@ -1512,6 +1474,33 @@
             this.btnReports.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
+            // PanelRegistration
+            // 
+            this.PanelRegistration.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.PanelRegistration.Controls.Add(this.guna2GradientPanel1);
+            this.PanelRegistration.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelRegistration.Location = new System.Drawing.Point(0, 80);
+            this.PanelRegistration.Name = "PanelRegistration";
+            this.PanelRegistration.Size = new System.Drawing.Size(283, 110);
+            this.PanelRegistration.TabIndex = 20;
+            this.PanelRegistration.Visible = false;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2GradientPanel1.BorderRadius = 10;
+            this.guna2GradientPanel1.Controls.Add(this.btnVR);
+            this.guna2GradientPanel1.Controls.Add(this.btnOR);
+            this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(5, 10);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.ShadowDecoration.Parent = this.guna2GradientPanel1;
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(270, 90);
+            this.guna2GradientPanel1.TabIndex = 6;
+            // 
             // btnVR
             // 
             this.btnVR.AnimationHoverSpeed = 0.07F;
@@ -1653,6 +1642,17 @@
             this.btnDashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDashboard.Click += new System.EventHandler(this.btnDashboard_Click);
             // 
+            // SidePanel
+            // 
+            this.SidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(219)))), ((int)(((byte)(246)))));
+            this.SidePanel.Controls.Add(this.pnlNav);
+            this.SidePanel.Controls.Add(this.QCU);
+            this.SidePanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SidePanel.Location = new System.Drawing.Point(0, 0);
+            this.SidePanel.Name = "SidePanel";
+            this.SidePanel.Size = new System.Drawing.Size(300, 640);
+            this.SidePanel.TabIndex = 9;
+            // 
             // QCU
             // 
             this.QCU.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1698,6 +1698,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -1719,6 +1720,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1733,8 +1735,6 @@
             this.PanelRegistration.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.SidePanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QCU)).EndInit();
             this.ResumeLayout(false);
 
