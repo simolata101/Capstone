@@ -469,7 +469,13 @@ namespace VRMS___Management__12_01_21_
 
         private void btnRV_Click(object sender, EventArgs e)
         {
-            
+            pnlDashboard.Hide();
+            pnlShow.Show();
+            pnlShow.Controls.Clear();
+            VRMS___Management__12_01_21_.VehicleReports OR = new VehicleReports();
+            OR.TopLevel = false;
+            pnlShow.Controls.Add(OR);
+            OR.Show();
         }
     }
 }

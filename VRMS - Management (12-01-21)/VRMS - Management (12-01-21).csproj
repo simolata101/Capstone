@@ -125,6 +125,11 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DeleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +192,12 @@
     <Compile Include="VAccount.Designer.cs">
       <DependentUpon>VAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="VehicleReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleReports.Designer.cs">
+      <DependentUpon>VehicleReports.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddAccount.resx">
       <DependentUpon>AddAccount.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +248,21 @@
     <EmbeddedResource Include="VAccount.resx">
       <DependentUpon>VAccount.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="VehicleReports.resx">
+      <DependentUpon>VehicleReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VReport.rdlc" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
