@@ -89,13 +89,13 @@
             this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.Enc = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -977,16 +977,6 @@
             this.gunaElipse2.Radius = 20;
             this.gunaElipse2.TargetControl = this;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(356, 66);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 24);
-            this.label6.TabIndex = 49;
-            this.label6.Text = "PROPRIETARY INFO";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -1039,18 +1029,28 @@
             this.pictureBox5.TabStop = false;
             this.pictureBox5.Visible = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(354, 66);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(214, 24);
+            this.label5.TabIndex = 55;
+            this.label5.Text = "PROPRIETARY INFO ";
+            // 
             // AddOwner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FloralWhite;
             this.ClientSize = new System.Drawing.Size(686, 728);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.Enc);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.comboBox1);
@@ -1170,12 +1170,12 @@
         private Guna.UI.WinForms.GunaElipse gunaElipse4;
         private Guna.UI.WinForms.GunaElipse gunaElipse3;
         private Guna.UI.WinForms.GunaElipse gunaElipse2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label Enc;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Label label5;
     }
 }
