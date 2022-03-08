@@ -96,8 +96,13 @@ namespace VRMS___Management__12_01_21_
 
                 VRMS___Management__12_01_21_.Dashboard s = new Dashboard();
                 VRMS___Management__12_01_21_.LHistory LH = new LHistory();
+                VRMS___Management__12_01_21_.LoadingScreen ls = new LoadingScreen();
                 try
                 {
+                    ls.TopLevel = true;
+                    s.Show();
+                    ls.ShowDialog();
+                                
                     OdbcCommand cmd = new OdbcCommand("SELECT fullname, level, admin_id, status FROM accounts WHERE username='" + txtUser.Text + "' AND password='" + txtPass.Text + "';", con);
                     OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                     DataTable dt = new DataTable();
