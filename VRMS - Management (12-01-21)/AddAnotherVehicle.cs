@@ -181,5 +181,10 @@ namespace VRMS___Management__12_01_21_
         {
 
         }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -131,11 +131,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(4, 4);
+            this.label13.Location = new System.Drawing.Point(0, 3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 13);
+            this.label13.Size = new System.Drawing.Size(112, 13);
             this.label13.TabIndex = 0;
-            this.label13.Text = "OPERATOR ID";
+            this.label13.Text = "PROPRIETARY ID";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // gunaElipse4
             // 
@@ -146,9 +147,9 @@
             // 
             this.panel5.Controls.Add(this.bunifuCustomTextbox1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(128, 94);
+            this.panel5.Location = new System.Drawing.Point(137, 94);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(191, 21);
+            this.panel5.Size = new System.Drawing.Size(182, 21);
             this.panel5.TabIndex = 4;
             // 
             // bunifuCustomTextbox1
@@ -484,8 +485,8 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel4.ColumnCount = 2;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.85135F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.14865F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.92546F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 58.07454F));
             this.tableLayoutPanel4.Controls.Add(this.panel1, 0, 1);
             this.tableLayoutPanel4.Controls.Add(this.panel5, 1, 5);
             this.tableLayoutPanel4.Controls.Add(this.panel9, 1, 1);
@@ -516,9 +517,9 @@
             // 
             this.panel9.Controls.Add(this.txtOwnerID);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(128, 22);
+            this.panel9.Location = new System.Drawing.Point(137, 22);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(191, 21);
+            this.panel9.Size = new System.Drawing.Size(182, 21);
             this.panel9.TabIndex = 7;
             // 
             // txtOwnerID
@@ -528,7 +529,7 @@
             this.txtOwnerID.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtOwnerID.Location = new System.Drawing.Point(3, 0);
             this.txtOwnerID.Name = "txtOwnerID";
-            this.txtOwnerID.Size = new System.Drawing.Size(185, 20);
+            this.txtOwnerID.Size = new System.Drawing.Size(176, 20);
             this.txtOwnerID.TabIndex = 1;
             // 
             // panel8
@@ -536,7 +537,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 166);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(119, 28);
+            this.panel8.Size = new System.Drawing.Size(128, 28);
             this.panel8.TabIndex = 6;
             // 
             // panel3
@@ -545,7 +546,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(3, 130);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(119, 21);
+            this.panel3.Size = new System.Drawing.Size(128, 21);
             this.panel3.TabIndex = 2;
             // 
             // label8
@@ -567,7 +568,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 94);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(119, 21);
+            this.panel2.Size = new System.Drawing.Size(128, 21);
             this.panel2.TabIndex = 1;
             // 
             // label9
@@ -577,7 +578,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(4, 6);
+            this.label9.Location = new System.Drawing.Point(-1, 5);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 13);
             this.label9.TabIndex = 1;
@@ -589,26 +590,26 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(3, 58);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(119, 21);
+            this.panel10.Size = new System.Drawing.Size(128, 21);
             this.panel10.TabIndex = 8;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(4, 3);
+            this.label10.Location = new System.Drawing.Point(-3, 4);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 13);
+            this.label10.Size = new System.Drawing.Size(134, 13);
             this.label10.TabIndex = 1;
-            this.label10.Text = "OPERATOR NAME";
+            this.label10.Text = "PROPRIETARY NAME";
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.nameVal);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(128, 58);
+            this.panel4.Location = new System.Drawing.Point(137, 58);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(191, 21);
+            this.panel4.Size = new System.Drawing.Size(182, 21);
             this.panel4.TabIndex = 9;
             // 
             // nameVal
@@ -619,17 +620,17 @@
             this.nameVal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameVal.Location = new System.Drawing.Point(3, 4);
             this.nameVal.Name = "nameVal";
-            this.nameVal.Size = new System.Drawing.Size(189, 13);
+            this.nameVal.Size = new System.Drawing.Size(117, 13);
             this.nameVal.TabIndex = 2;
-            this.nameVal.Text = "OPERATOR NAME DATA HERE";
+            this.nameVal.Text = "NAME DATA HERE";
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.cmbWheels);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(128, 130);
+            this.panel6.Location = new System.Drawing.Point(137, 130);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(191, 21);
+            this.panel6.Size = new System.Drawing.Size(182, 21);
             this.panel6.TabIndex = 10;
             // 
             // cmbWheels
@@ -645,15 +646,15 @@
             "4 wheels - VAN"});
             this.cmbWheels.Location = new System.Drawing.Point(3, 0);
             this.cmbWheels.Name = "cmbWheels";
-            this.cmbWheels.Size = new System.Drawing.Size(186, 21);
+            this.cmbWheels.Size = new System.Drawing.Size(177, 21);
             this.cmbWheels.TabIndex = 0;
             // 
             // panel14
             // 
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(128, 166);
+            this.panel14.Location = new System.Drawing.Point(137, 166);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(191, 28);
+            this.panel14.Size = new System.Drawing.Size(182, 28);
             this.panel14.TabIndex = 5;
             // 
             // panel15

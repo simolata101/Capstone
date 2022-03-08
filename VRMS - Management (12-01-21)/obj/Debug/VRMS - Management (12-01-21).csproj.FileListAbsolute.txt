@@ -444,4 +444,3 @@ C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.xml
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.xml
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\AForge.Video.DirectShow.xml
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csprojResolveAssemblyReference.cache

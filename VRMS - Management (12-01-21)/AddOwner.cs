@@ -394,5 +394,10 @@ namespace VRMS___Management__12_01_21_
         {
 
         }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
