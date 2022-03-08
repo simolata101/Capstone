@@ -146,9 +146,8 @@
             this.lblOwner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
             this.lblOwner.Location = new System.Drawing.Point(4, 7);
             this.lblOwner.Name = "lblOwner";
-            this.lblOwner.Size = new System.Drawing.Size(88, 24);
+            this.lblOwner.Size = new System.Drawing.Size(0, 24);
             this.lblOwner.TabIndex = 9;
-            this.lblOwner.Text = "OWNER";
             // 
             // btnAdd
             // 
@@ -266,9 +265,9 @@
             this.header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
             this.header.Location = new System.Drawing.Point(7, 8);
             this.header.Name = "header";
-            this.header.Size = new System.Drawing.Size(234, 20);
+            this.header.Size = new System.Drawing.Size(261, 20);
             this.header.TabIndex = 13;
-            this.header.Text = "REGISTERED OPERATOR";
+            this.header.Text = "REGISTERED PROPRIETARY";
             // 
             // pnlBody
             // 
@@ -303,7 +302,7 @@
             // 
             this.tlpHead.ColumnCount = 3;
             this.tlpHead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tlpHead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 250F));
+            this.tlpHead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 273F));
             this.tlpHead.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tlpHead.Controls.Add(this.pnlHead, 1, 0);
             this.tlpHead.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -318,9 +317,9 @@
             // 
             this.pnlHead.Controls.Add(this.header);
             this.pnlHead.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlHead.Location = new System.Drawing.Point(355, 3);
+            this.pnlHead.Location = new System.Drawing.Point(343, 3);
             this.pnlHead.Name = "pnlHead";
-            this.pnlHead.Size = new System.Drawing.Size(244, 38);
+            this.pnlHead.Size = new System.Drawing.Size(267, 38);
             this.pnlHead.TabIndex = 0;
             // 
             // tlpButtons

@@ -1566,7 +1566,7 @@
             this.btnOR.Radius = 10;
             this.btnOR.Size = new System.Drawing.Size(270, 40);
             this.btnOR.TabIndex = 2;
-            this.btnOR.Text = "OWNER REGISTRATION";
+            this.btnOR.Text = "PROPIETARY REGISTRATION";
             this.btnOR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnOR.Click += new System.EventHandler(this.btnOR_Click);
             // 
