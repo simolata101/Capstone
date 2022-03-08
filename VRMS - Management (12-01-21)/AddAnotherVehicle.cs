@@ -176,5 +176,10 @@ namespace VRMS___Management__12_01_21_
         {
             this.Close();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
