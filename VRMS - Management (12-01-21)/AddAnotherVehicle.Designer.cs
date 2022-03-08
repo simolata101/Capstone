@@ -202,7 +202,7 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.ColumnCount = 4;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.133499F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.8387F));
@@ -674,9 +674,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(352, 57);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 24);
+            this.label6.Size = new System.Drawing.Size(208, 24);
             this.label6.TabIndex = 73;
-            this.label6.Text = "OPERATOR INFO";
+            this.label6.Text = "PROPRIETARY INFO";
             // 
             // timer1
             // 
@@ -687,11 +687,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(308, 107);
+            this.label7.Location = new System.Drawing.Point(314, 117);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 18);
+            this.label7.Size = new System.Drawing.Size(122, 18);
             this.label7.TabIndex = 74;
-            this.label7.Text = "Operator ID: ";
+            this.label7.Text = "Proprietary ID: ";
             // 
             // RadiusTLPanel
             // 
@@ -725,7 +725,7 @@
             // 
             this.txtOperatorID.BorderColor = System.Drawing.Color.SeaGreen;
             this.txtOperatorID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOperatorID.Location = new System.Drawing.Point(420, 107);
+            this.txtOperatorID.Location = new System.Drawing.Point(437, 107);
             this.txtOperatorID.Multiline = true;
             this.txtOperatorID.Name = "txtOperatorID";
             this.txtOperatorID.Size = new System.Drawing.Size(146, 28);
@@ -746,11 +746,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(308, 145);
+            this.label3.Location = new System.Drawing.Point(314, 145);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(187, 18);
+            this.label3.Size = new System.Drawing.Size(203, 18);
             this.label3.TabIndex = 59;
-            this.label3.Text = "Operator Classification:";
+            this.label3.Text = "Proprietary Classification:";
             // 
             // label2
             // 
@@ -786,7 +786,7 @@
             // 
             this.lblOperatorClass.AutoSize = true;
             this.lblOperatorClass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblOperatorClass.Location = new System.Drawing.Point(501, 145);
+            this.lblOperatorClass.Location = new System.Drawing.Point(511, 145);
             this.lblOperatorClass.Name = "lblOperatorClass";
             this.lblOperatorClass.Size = new System.Drawing.Size(81, 18);
             this.lblOperatorClass.TabIndex = 81;

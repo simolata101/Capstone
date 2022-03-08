@@ -146,9 +146,9 @@
             this.cmbOtype.Items.AddRange(new object[] {
             "STUDENT",
             "EMPLOYEE"});
-            this.cmbOtype.Location = new System.Drawing.Point(471, 127);
+            this.cmbOtype.Location = new System.Drawing.Point(485, 127);
             this.cmbOtype.Name = "cmbOtype";
-            this.cmbOtype.Size = new System.Drawing.Size(124, 21);
+            this.cmbOtype.Size = new System.Drawing.Size(110, 21);
             this.cmbOtype.TabIndex = 36;
             // 
             // txtFullname
@@ -183,9 +183,9 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(308, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 15);
+            this.label3.Size = new System.Drawing.Size(171, 15);
             this.label3.TabIndex = 25;
-            this.label3.Text = "Operator Classification:";
+            this.label3.Text = "Proprietary Classification:";
             // 
             // label2
             // 
@@ -983,9 +983,9 @@
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
             this.label6.Location = new System.Drawing.Point(356, 66);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(179, 24);
+            this.label6.Size = new System.Drawing.Size(208, 24);
             this.label6.TabIndex = 49;
-            this.label6.Text = "OPERATOR INFO";
+            this.label6.Text = "PROPRIETARY INFO";
             // 
             // label7
             // 
@@ -993,15 +993,15 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.label7.Location = new System.Drawing.Point(308, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 15);
+            this.label7.Size = new System.Drawing.Size(103, 15);
             this.label7.TabIndex = 50;
-            this.label7.Text = "Operator ID: ";
+            this.label7.Text = "Proprietary ID: ";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
-            this.label14.Location = new System.Drawing.Point(402, 102);
+            this.label14.Location = new System.Drawing.Point(419, 102);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(89, 15);
             this.label14.TabIndex = 51;
