@@ -46,18 +46,31 @@ namespace VRMS___Management__12_01_21_
 
         private void AddOwner_Load(object sender, EventArgs e)
         {
+            CaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
+            foreach (FilterInfo Device in CaptureDevices)
+            {
+                comboBox1.Items.Add(Device.Name);
+            }
+            comboBox1.SelectedIndex = 0;
+            videoSource = new VideoCaptureDevice();
            // gunaAdvenceButton3.Enabled = false;
             if (pictureBox1.Image == null)
             {
                 cmbOtype.Enabled = false;
                 txtLname.Enabled = false;
                 txtSchoolID.Enabled = false;
+                txtFname.Enabled = false;
+                txtMname.Enabled = false;
+                txtSuf.Enabled = false;
             }
             else
             {
                 cmbOtype.Enabled = true;
                 txtLname.Enabled = true;
                 txtSchoolID.Enabled = true;
+                txtFname.Enabled = true;
+                txtMname.Enabled = true;
+                txtSuf.Enabled = true;
             }
 
 
@@ -67,15 +80,7 @@ namespace VRMS___Management__12_01_21_
                 bunifuCustomTextbox1.Enabled =false;
                 cmbWheels.Enabled = false;
                 
-            }
-
-            CaptureDevices = new FilterInfoCollection(FilterCategory.VideoInputDevice);
-            foreach (FilterInfo Device in CaptureDevices)
-            {
-                comboBox1.Items.Add(Device.Name);
-            }
-            comboBox1.SelectedIndex = 0;
-            videoSource = new VideoCaptureDevice();
+            }            
         }
 
         private void btnCancel_Click_1(object sender, EventArgs e)
@@ -250,7 +255,10 @@ namespace VRMS___Management__12_01_21_
             if(pictureBox1.Image != null){
                 cmbOtype.Enabled = true;
                 txtLname.Enabled = true;
-                txtSchoolID.Enabled = true;   
+                txtSchoolID.Enabled = true;
+                txtFname.Enabled = true;
+                txtMname.Enabled = true;
+                txtSuf.Enabled = true;
             }
         }
 
@@ -272,6 +280,7 @@ namespace VRMS___Management__12_01_21_
                 pictureBox1.Invalidate();
                 pictureBox2.Image = null;
                 pictureBox2.Invalidate();
+                videoSource.Start();
             }
         }
 
@@ -288,6 +297,7 @@ namespace VRMS___Management__12_01_21_
                 else
                 {
                     videoSource.Stop();
+                    this.Close();
                 }
             }
             catch (Exception ex)
@@ -433,6 +443,18 @@ namespace VRMS___Management__12_01_21_
         private void pictureBox3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaAdvenceButton3_Click_1(object sender, EventArgs e)
+        {
+            pictureBox2.Image = null;
+            videoSource.Stop();
+            cmbOtype.Enabled = false;
+            txtLname.Enabled = false;
+            txtSchoolID.Enabled = false;
+            txtFname.Enabled = false;
+            txtMname.Enabled = false;
+            txtSuf.Enabled = false;
         }
     }
 }

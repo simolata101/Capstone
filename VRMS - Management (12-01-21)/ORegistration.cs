@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
+using System.IO;
 namespace VRMS___Management__12_01_21_
 {
     public partial class ORegistration : Form
@@ -32,7 +33,7 @@ namespace VRMS___Management__12_01_21_
         {
             try
             {
-                OdbcCommand cmd = new OdbcCommand("SELECT owner_id as 'OWNER ID', school_id as 'SCHOOL ID', lname as 'LAST NAME', fname as 'FIRST NAME', mname as 'M.I.', suf as 'SUFFIX', type as 'OWNER TYPE' FROM registered_owners;", con);
+                OdbcCommand cmd = new OdbcCommand("SELECT owner_id as 'PROPRIETARY ID', school_id as 'SCHOOL ID', lname as 'LAST NAME', fname as 'FIRST NAME', mname as 'M.I.', suf as 'SUFFIX', type as 'OWNER TYPE' FROM registered_owners;", con);
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adptr.Fill(ds, "Empty");
@@ -52,17 +53,66 @@ namespace VRMS___Management__12_01_21_
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
             OdbcConnection cons = new OdbcConnection("dsn=capstone");
-            cons.Open();
-            OdbcCommand commands = new OdbcCommand("SELECT owner_id, school_id, fullname, type FROM registered_owners WHERE owner_id LIKE '%" + txtSearch.Text + "%' OR school_id LIKE '%" + txtSearch.Text + "%' OR fullname LIKE '%" + txtSearch.Text + "%'", cons);
-            OdbcDataAdapter adptrr = new OdbcDataAdapter(commands);
-            DataTable dt = new DataTable();
-            adptrr.Fill(dt);
-            bunifuCustomDataGrid1.DataSource = dt;
-            con.Close();
+            try
+            {
+                OdbcCommand commands = new OdbcCommand("SELECT owner_id, school_id, fullname, type FROM registered_owners WHERE owner_id LIKE '%" + txtSearch.Text + "%' OR school_id LIKE '%" + txtSearch.Text + "%' OR fullname LIKE '%" + txtSearch.Text + "%'", cons);
+                OdbcDataAdapter adptrr = new OdbcDataAdapter(commands);
+                DataTable dt = new DataTable();
+                adptrr.Fill(dt);
+                bunifuCustomDataGrid1.DataSource = dt;
+                con.Close();
 
-            bunifuCustomDataGrid1.Columns[0].HeaderText = "OWNER ID";
-            bunifuCustomDataGrid1.Columns[1].HeaderText = "SCHOOL ID";
-            bunifuCustomDataGrid1.Columns[3].HeaderText = "OWNER TYPE";
+                bunifuCustomDataGrid1.Columns[0].HeaderText = "OWNER ID";
+                bunifuCustomDataGrid1.Columns[1].HeaderText = "SCHOOL ID";
+                bunifuCustomDataGrid1.Columns[3].HeaderText = "OWNER TYPE";
+            }catch(Exception ex)
+            {
+                cons.Close();
+            }
+            pics();
+            fetch();
+        }
+
+        public void fetch()
+        {
+            try
+            {
+                OdbcCommand cmd = new OdbcCommand("SELECT owner_id,school_id,type,fname,mname,lname,suf	FROM registered_owners WHERE owner_id='"+txtSearch.Text+"'",con);
+                OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                adptr.Fill(dt);
+                label2.Text = dt.Rows[0][0].ToString();
+                label4.Text = dt.Rows[0][5].ToString() + ", " + dt.Rows[0][3].ToString() + " " + dt.Rows[0][4].ToString()+".";
+                label6.Text = dt.Rows[0][1].ToString();
+                label8.Text = dt.Rows[0][2].ToString();
+                con.Close();
+            }catch(Exception ex){
+                con.Close();
+            }
+        }
+
+        public void pics()
+        {
+
+
+            try
+            {
+                con.Open();
+                OdbcCommand cmd = new OdbcCommand("select img from owner_pic where owner_id='" + txtSearch.Text + "'", con);
+                OdbcDataAdapter da = new OdbcDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    MemoryStream ms = new MemoryStream((byte[])ds.Tables[0].Rows[0]["img"]);
+                    pbOwner.Image = new Bitmap(ms);
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                con.Close();
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -73,8 +123,15 @@ namespace VRMS___Management__12_01_21_
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            OUpdate ou = new OUpdate();
-            ou.ShowDialog();
+            if(txtSearch.Text==""){
+                MessageBox.Show("Kulang ka sa gawa");
+            }
+            else
+            {
+                OUpdate ou = new OUpdate();
+                ou.lblPID.Text = lblShowID.Text;
+                ou.ShowDialog();
+            }
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -177,6 +234,36 @@ namespace VRMS___Management__12_01_21_
         private void lblShowID_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuCustomDataGrid1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                String OWID;
+                OWID = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
+                lblShowID.Text = OWID;
+                txtSearch.Text = OWID;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                String OWID;
+                OWID = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].FormattedValue.ToString();
+                lblShowID.Text = OWID;
+                txtSearch.Text = OWID;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
     }

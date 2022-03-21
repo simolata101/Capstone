@@ -9,6 +9,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.Odbc;
+using ZXing.QrCode;
+using ZXing;
+using System.Security.Cryptography;
+using System.IO;
 
 namespace VRMS___Management__12_01_21_
 {
@@ -206,5 +210,70 @@ namespace VRMS___Management__12_01_21_
             }
 
         }
+
+        public static string EncryptString(string key, string plainText)
+        {
+            byte[] iv = new byte[16];
+            byte[] array;
+
+            using (Aes aes = Aes.Create())
+            {
+                aes.Key = Encoding.UTF8.GetBytes(key);
+                aes.IV = iv;
+
+                ICryptoTransform encryptor = aes.CreateEncryptor(aes.Key, aes.IV);
+
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    using (CryptoStream cryptoStream = new CryptoStream((Stream)memoryStream, encryptor, CryptoStreamMode.Write))
+                    {
+                        using (StreamWriter streamWriter = new StreamWriter((Stream)cryptoStream))
+                        {
+                            streamWriter.Write(plainText);
+                        }
+
+                        array = memoryStream.ToArray();
+                    }
+                }
+            }
+
+            return Convert.ToBase64String(array);
+        }
+        private void label3_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void cmbV_ID_TextChanged(object sender, EventArgs e)
+        {
+            string enc = EncryptString("AAECAwQFBgcICQoLDA0ODw==", cmbV_ID.Text);
+            label3.Text = enc;
+            QrCodeEncodingOptions options = new QrCodeEncodingOptions();
+            options = new QrCodeEncodingOptions
+            {
+                DisableECI = true,
+                CharacterSet = "UTF-8",
+                Width = 250,
+                Height = 250,
+            };
+            var writer = new BarcodeWriter();
+            writer.Format = BarcodeFormat.QR_CODE;
+            writer.Options = options;
+
+            if (String.IsNullOrWhiteSpace(label3.Text) || String.IsNullOrEmpty(label3.Text))
+            {
+                // pictureBox2.Image = null;
+                MessageBox.Show("Text not found", "Oops!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                var qr = new ZXing.BarcodeWriter();
+                qr.Options = options;
+                qr.Format = ZXing.BarcodeFormat.QR_CODE;
+                var result = new Bitmap(qr.Write(label3.Text.Trim()));
+                pictureBox2.Image = result;
+            }
+        }
+
     }
 }

@@ -78,6 +78,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.txtScan = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnFind = new Guna.UI.WinForms.GunaAdvenceButton();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
@@ -546,6 +547,7 @@
             this.cmbV_ID.Size = new System.Drawing.Size(121, 21);
             this.cmbV_ID.TabIndex = 23;
             this.cmbV_ID.SelectedIndexChanged += new System.EventHandler(this.cmbV_ID_SelectedIndexChanged);
+            this.cmbV_ID.TextChanged += new System.EventHandler(this.cmbV_ID_TextChanged);
             // 
             // txtVehicleType
             // 
@@ -732,6 +734,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtScan);
             this.panel2.Controls.Add(this.btnFind);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -739,6 +742,17 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(932, 61);
             this.panel2.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(632, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "label3";
+            this.label3.Visible = false;
+            this.label3.TextChanged += new System.EventHandler(this.label3_TextChanged);
             // 
             // txtScan
             // 
@@ -850,6 +864,7 @@
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -908,5 +923,6 @@
         private System.Windows.Forms.ComboBox cmbV_ID;
         public System.Windows.Forms.Label txtVehicleType;
         public System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label3;
     }
 }

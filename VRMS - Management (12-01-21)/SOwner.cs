@@ -36,7 +36,7 @@ namespace VRMS___Management__12_01_21_
                 OdbcDataAdapter adptr = new OdbcDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adptr.Fill(ds, "Empty");
-                dgvRegVec.DataSource = ds.Tables[0];
+                bunifuCustomDataGrid1.DataSource = ds.Tables[0];
                 con.Close();
             }
             catch (Exception ex)
@@ -56,13 +56,13 @@ namespace VRMS___Management__12_01_21_
             OdbcDataAdapter adptrr = new OdbcDataAdapter(commands);
             DataTable dt = new DataTable();
             adptrr.Fill(dt);
-            dgvRegVec.DataSource = dt;
+            bunifuCustomDataGrid1.DataSource = dt;
             con.Close();
 
-            dgvRegVec.Columns[0].HeaderText = "VEHICLE ID";
-            dgvRegVec.Columns[1].HeaderText = "OWNER ID";
-            dgvRegVec.Columns[2].HeaderText = "PLATE NUMBER";
-            dgvRegVec.Columns[3].HeaderText = "TYPE OF VEHICLE";
+            bunifuCustomDataGrid1.Columns[0].HeaderText = "VEHICLE ID";
+            bunifuCustomDataGrid1.Columns[1].HeaderText = "OWNER ID";
+            bunifuCustomDataGrid1.Columns[2].HeaderText = "PLATE NUMBER";
+            bunifuCustomDataGrid1.Columns[3].HeaderText = "TYPE OF VEHICLE";
         }
 
         private void btnDel_Click(object sender, EventArgs e)
@@ -74,8 +74,8 @@ namespace VRMS___Management__12_01_21_
 
         private void dgvRegVec_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-            lblShowID.Text = dgvRegVec.Rows[e.RowIndex].Cells["Vehicle ID"].FormattedValue.ToString();
+
+            lblShowID.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells["Vehicle ID"].FormattedValue.ToString();
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

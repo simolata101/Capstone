@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.Corners = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pnlBody = new System.Windows.Forms.TableLayoutPanel();
             this.pnlHeader = new System.Windows.Forms.Panel();
@@ -47,11 +48,11 @@
             this.lblShowID = new System.Windows.Forms.Label();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.tlpContents = new System.Windows.Forms.TableLayoutPanel();
-            this.dgvRegVec = new Guna.UI2.WinForms.Guna2DataGridView();
             this.tlpShow = new System.Windows.Forms.TableLayoutPanel();
-            this.lblVehicle = new System.Windows.Forms.Label();
-            this.pbVehicle = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlVehicle = new System.Windows.Forms.Panel();
+            this.pbVehicle = new Guna.UI.WinForms.GunaPictureBox();
+            this.lblVehicle = new System.Windows.Forms.Label();
+            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.pnlBody.SuspendLayout();
             this.pnlHeader.SuspendLayout();
             this.tlpHead.SuspendLayout();
@@ -59,10 +60,10 @@
             this.tlpButtons.SuspendLayout();
             this.pnlSearch.SuspendLayout();
             this.tlpContents.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRegVec)).BeginInit();
             this.tlpShow.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbVehicle)).BeginInit();
             this.pnlVehicle.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVehicle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
             this.SuspendLayout();
             // 
             // Corners
@@ -317,7 +318,7 @@
             this.tlpContents.ColumnCount = 2;
             this.tlpContents.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tlpContents.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tlpContents.Controls.Add(this.dgvRegVec, 1, 0);
+            this.tlpContents.Controls.Add(this.bunifuCustomDataGrid1, 0, 0);
             this.tlpContents.Controls.Add(this.tlpShow, 0, 0);
             this.tlpContents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpContents.Location = new System.Drawing.Point(3, 123);
@@ -326,65 +327,6 @@
             this.tlpContents.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tlpContents.Size = new System.Drawing.Size(954, 414);
             this.tlpContents.TabIndex = 2;
-            // 
-            // dgvRegVec
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvRegVec.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvRegVec.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRegVec.BackgroundColor = System.Drawing.Color.White;
-            this.dgvRegVec.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvRegVec.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvRegVec.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvRegVec.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvRegVec.ColumnHeadersHeight = 40;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvRegVec.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvRegVec.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvRegVec.EnableHeadersVisualStyles = false;
-            this.dgvRegVec.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvRegVec.Location = new System.Drawing.Point(289, 3);
-            this.dgvRegVec.Name = "dgvRegVec";
-            this.dgvRegVec.RowHeadersVisible = false;
-            this.dgvRegVec.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRegVec.Size = new System.Drawing.Size(662, 408);
-            this.dgvRegVec.TabIndex = 0;
-            this.dgvRegVec.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Default;
-            this.dgvRegVec.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvRegVec.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvRegVec.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvRegVec.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvRegVec.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvRegVec.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvRegVec.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvRegVec.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvRegVec.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvRegVec.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvRegVec.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvRegVec.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvRegVec.ThemeStyle.HeaderStyle.Height = 40;
-            this.dgvRegVec.ThemeStyle.ReadOnly = false;
-            this.dgvRegVec.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvRegVec.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvRegVec.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            this.dgvRegVec.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvRegVec.ThemeStyle.RowsStyle.Height = 22;
-            this.dgvRegVec.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvRegVec.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvRegVec.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegVec_CellClick);
             // 
             // tlpShow
             // 
@@ -403,16 +345,15 @@
             this.tlpShow.Size = new System.Drawing.Size(280, 408);
             this.tlpShow.TabIndex = 1;
             // 
-            // lblVehicle
+            // pnlVehicle
             // 
-            this.lblVehicle.AutoSize = true;
-            this.lblVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.lblVehicle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.lblVehicle.Location = new System.Drawing.Point(3, 7);
-            this.lblVehicle.Name = "lblVehicle";
-            this.lblVehicle.Size = new System.Drawing.Size(168, 24);
-            this.lblVehicle.TabIndex = 9;
-            this.lblVehicle.Text = "VEHICLE IMAGE";
+            this.pnlVehicle.Controls.Add(this.pbVehicle);
+            this.pnlVehicle.Controls.Add(this.lblVehicle);
+            this.pnlVehicle.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlVehicle.Location = new System.Drawing.Point(3, 3);
+            this.pnlVehicle.Name = "pnlVehicle";
+            this.pnlVehicle.Size = new System.Drawing.Size(274, 188);
+            this.pnlVehicle.TabIndex = 0;
             // 
             // pbVehicle
             // 
@@ -428,15 +369,58 @@
             this.pbVehicle.TabIndex = 1;
             this.pbVehicle.TabStop = false;
             // 
-            // pnlVehicle
+            // lblVehicle
             // 
-            this.pnlVehicle.Controls.Add(this.pbVehicle);
-            this.pnlVehicle.Controls.Add(this.lblVehicle);
-            this.pnlVehicle.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlVehicle.Location = new System.Drawing.Point(3, 3);
-            this.pnlVehicle.Name = "pnlVehicle";
-            this.pnlVehicle.Size = new System.Drawing.Size(274, 188);
-            this.pnlVehicle.TabIndex = 0;
+            this.lblVehicle.AutoSize = true;
+            this.lblVehicle.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.lblVehicle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.lblVehicle.Location = new System.Drawing.Point(3, 7);
+            this.lblVehicle.Name = "lblVehicle";
+            this.lblVehicle.Size = new System.Drawing.Size(168, 24);
+            this.lblVehicle.TabIndex = 9;
+            this.lblVehicle.Text = "VEHICLE IMAGE";
+            // 
+            // bunifuCustomDataGrid1
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.bunifuCustomDataGrid1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.bunifuCustomDataGrid1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Silver;
+            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
+            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SteelBlue;
+            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(289, 3);
+            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
+            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.bunifuCustomDataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.bunifuCustomDataGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(662, 408);
+            this.bunifuCustomDataGrid1.TabIndex = 3;
             // 
             // SOwner
             // 
@@ -460,11 +444,11 @@
             this.pnlSearch.ResumeLayout(false);
             this.pnlSearch.PerformLayout();
             this.tlpContents.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvRegVec)).EndInit();
             this.tlpShow.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbVehicle)).EndInit();
             this.pnlVehicle.ResumeLayout(false);
             this.pnlVehicle.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbVehicle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -484,11 +468,11 @@
         private System.Windows.Forms.Panel pnlSearch;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private System.Windows.Forms.TableLayoutPanel tlpContents;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvRegVec;
         private System.Windows.Forms.TableLayoutPanel tlpShow;
         private System.Windows.Forms.Label lblShowID;
         private System.Windows.Forms.Panel pnlVehicle;
         private Guna.UI.WinForms.GunaPictureBox pbVehicle;
         public System.Windows.Forms.Label lblVehicle;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
     }
 }

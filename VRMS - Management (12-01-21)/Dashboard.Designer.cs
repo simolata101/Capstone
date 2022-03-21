@@ -36,6 +36,7 @@
             this.lblCurrent = new System.Windows.Forms.Label();
             this.MainPanel = new System.Windows.Forms.Panel();
             this.pnlBody = new Guna.UI.WinForms.GunaElipsePanel();
+            this.lbltrigger = new System.Windows.Forms.Label();
             this.username = new Guna.UI.WinForms.GunaElipsePanel();
             this.hello = new Guna.UI.WinForms.GunaElipsePanel();
             this.lblAdmin = new System.Windows.Forms.Label();
@@ -69,7 +70,6 @@
             this.btnDashboard = new Guna.UI.WinForms.GunaAdvenceButton();
             this.SidePanel = new System.Windows.Forms.Panel();
             this.QCU = new Guna.UI.WinForms.GunaPictureBox();
-            this.lbltrigger = new System.Windows.Forms.Label();
             this.MainPanel.SuspendLayout();
             this.pnlBody.SuspendLayout();
             this.username.SuspendLayout();
@@ -166,6 +166,16 @@
             this.pnlBody.Size = new System.Drawing.Size(704, 610);
             this.pnlBody.TabIndex = 0;
             this.pnlBody.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlBody_Paint);
+            // 
+            // lbltrigger
+            // 
+            this.lbltrigger.AutoSize = true;
+            this.lbltrigger.Location = new System.Drawing.Point(56, 61);
+            this.lbltrigger.Name = "lbltrigger";
+            this.lbltrigger.Size = new System.Drawing.Size(35, 13);
+            this.lbltrigger.TabIndex = 12;
+            this.lbltrigger.Text = "label1";
+            this.lbltrigger.Visible = false;
             // 
             // username
             // 
@@ -940,15 +950,6 @@
             this.QCU.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.QCU.TabIndex = 0;
             this.QCU.TabStop = false;
-            // 
-            // lbltrigger
-            // 
-            this.lbltrigger.AutoSize = true;
-            this.lbltrigger.Location = new System.Drawing.Point(56, 61);
-            this.lbltrigger.Name = "lbltrigger";
-            this.lbltrigger.Size = new System.Drawing.Size(35, 13);
-            this.lbltrigger.TabIndex = 12;
-            this.lbltrigger.Text = "label1";
             // 
             // Dashboard
             // 
