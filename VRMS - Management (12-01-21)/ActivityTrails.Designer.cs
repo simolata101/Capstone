@@ -260,6 +260,7 @@
             this.btnPrint.TabIndex = 12;
             this.btnPrint.Text = "PRINT";
             this.btnPrint.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
             // 
             // pnlTo
             // 
@@ -407,6 +408,7 @@
             this.btnFind.TabIndex = 11;
             this.btnFind.Text = "FIND";
             this.btnFind.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnFind.Click += new System.EventHandler(this.btnFind_Click);
             // 
             // pnlSearch
             // 

@@ -473,6 +473,7 @@
             this.gunaAdvenceButton2.TabIndex = 21;
             this.gunaAdvenceButton2.Text = "PRINT";
             this.gunaAdvenceButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaAdvenceButton2.Click += new System.EventHandler(this.gunaAdvenceButton2_Click);
             // 
             // tableLayoutPanel4
             // 

@@ -80,7 +80,8 @@ namespace VRMS___Management__12_01_21_
                         cmd.Parameters.Add("@Checker_FP", OdbcType.Int).Value = 0;
                         if (cmd.ExecuteNonQuery() == 1)
                         {
-                            String display = "Admin Id: " + label8.Text + "\nFullname" + textBox1.Text + "\nLevel: " + comboBox1.Text;
+                            //String display = "Admin Id: " + label8.Text + "\nFullname" + textBox1.Text + "\nLevel: " + comboBox1.Text;
+                            String display = "Account Added Succesfuly";
                             MessageBox.Show(display);
                         }
                         con.Close();

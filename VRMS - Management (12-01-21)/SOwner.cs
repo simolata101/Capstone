@@ -114,9 +114,16 @@ namespace VRMS___Management__12_01_21_
 
         private void btnDel_Click(object sender, EventArgs e)
         {
+            if (txtScan.Text == "")
+            {
+                MessageBox.Show("PLease select a data, you want to delete");
+            }
+            else { 
             DeleteForm df = new DeleteForm();
-            df.lblShowID.Text = lblShowID.Text;
+            df.lblShowID.Text = txtScan.Text;
+            df.label3.Text = "Registered Vehicle";
             df.ShowDialog();
+            }
         }
 
         private void dgvRegVec_CellClick(object sender, DataGridViewCellEventArgs e)

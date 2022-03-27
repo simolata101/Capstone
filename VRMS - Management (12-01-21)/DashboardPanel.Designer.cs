@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.LegendItem legendItem1 = new System.Windows.Forms.DataVisualization.Charting.LegendItem();
             System.Windows.Forms.DataVisualization.Charting.LegendItem legendItem2 = new System.Windows.Forms.DataVisualization.Charting.LegendItem();
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
@@ -79,6 +79,8 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel17 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel24 = new System.Windows.Forms.Panel();
+            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel9 = new System.Windows.Forms.TableLayoutPanel();
@@ -94,14 +96,12 @@
             this.tableLayoutPanel8 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel18 = new System.Windows.Forms.TableLayoutPanel();
             this.panel22 = new System.Windows.Forms.Panel();
+            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label1 = new System.Windows.Forms.Label();
+            this.gunaCircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
             this.panel7 = new System.Windows.Forms.Panel();
             this.lblDash = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.gunaCircleProgressBar1 = new Guna.UI.WinForms.GunaCircleProgressBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -128,6 +128,8 @@
             this.tableLayoutPanel12.SuspendLayout();
             this.panel10.SuspendLayout();
             this.tableLayoutPanel17.SuspendLayout();
+            this.panel24.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.tableLayoutPanel9.SuspendLayout();
@@ -141,11 +143,9 @@
             this.tableLayoutPanel8.SuspendLayout();
             this.tableLayoutPanel18.SuspendLayout();
             this.panel22.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.panel7.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).BeginInit();
-            this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -192,7 +192,7 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.57895F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.84211F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel3.Controls.Add(this.panel3, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 3, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel5, 5, 0);
@@ -211,7 +211,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(23, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(373, 227);
+            this.panel3.Size = new System.Drawing.Size(372, 227);
             this.panel3.TabIndex = 0;
             // 
             // tableLayoutPanel5
@@ -226,7 +226,7 @@
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 22.46696F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 77.53304F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(373, 227);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(372, 227);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel10
@@ -241,7 +241,7 @@
             this.tableLayoutPanel10.RowCount = 1;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel10.Size = new System.Drawing.Size(367, 45);
+            this.tableLayoutPanel10.Size = new System.Drawing.Size(366, 45);
             this.tableLayoutPanel10.TabIndex = 0;
             this.tableLayoutPanel10.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel10_Paint);
             // 
@@ -252,7 +252,7 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(29, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(335, 39);
+            this.panel8.Size = new System.Drawing.Size(334, 39);
             this.panel8.TabIndex = 0;
             // 
             // bunifuSeparator3
@@ -284,7 +284,7 @@
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.231708F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 73.9255F));
             this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.05158F));
-            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 23F));
+            this.tableLayoutPanel15.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel15.Controls.Add(this.panel13, 1, 1);
             this.tableLayoutPanel15.Controls.Add(this.panel14, 1, 3);
             this.tableLayoutPanel15.Controls.Add(this.panel17, 2, 1);
@@ -298,16 +298,16 @@
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.051282F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.25641F));
             this.tableLayoutPanel15.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.97436F));
-            this.tableLayoutPanel15.Size = new System.Drawing.Size(367, 170);
+            this.tableLayoutPanel15.Size = new System.Drawing.Size(366, 170);
             this.tableLayoutPanel15.TabIndex = 1;
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.label4);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(31, 14);
+            this.panel13.Location = new System.Drawing.Point(30, 14);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(247, 64);
+            this.panel13.Size = new System.Drawing.Size(244, 64);
             this.panel13.TabIndex = 0;
             // 
             // label4
@@ -327,9 +327,9 @@
             // 
             this.panel14.Controls.Add(this.label5);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(31, 95);
+            this.panel14.Location = new System.Drawing.Point(30, 95);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(247, 53);
+            this.panel14.Size = new System.Drawing.Size(244, 53);
             this.panel14.TabIndex = 1;
             // 
             // label5
@@ -347,7 +347,7 @@
             // 
             this.panel17.Controls.Add(this.label8);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(284, 14);
+            this.panel17.Location = new System.Drawing.Point(280, 14);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(55, 64);
             this.panel17.TabIndex = 2;
@@ -367,7 +367,7 @@
             // 
             this.panel18.Controls.Add(this.label9);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(284, 95);
+            this.panel18.Location = new System.Drawing.Point(280, 95);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(55, 53);
             this.panel18.TabIndex = 3;
@@ -388,9 +388,9 @@
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.panel4.Controls.Add(this.tableLayoutPanel6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(422, 3);
+            this.panel4.Location = new System.Drawing.Point(421, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(373, 227);
+            this.panel4.Size = new System.Drawing.Size(372, 227);
             this.panel4.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -406,7 +406,7 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.70485F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.29515F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(373, 227);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(372, 227);
             this.tableLayoutPanel6.TabIndex = 1;
             // 
             // tableLayoutPanel11
@@ -421,7 +421,7 @@
             this.tableLayoutPanel11.RowCount = 1;
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel11.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
-            this.tableLayoutPanel11.Size = new System.Drawing.Size(367, 41);
+            this.tableLayoutPanel11.Size = new System.Drawing.Size(366, 41);
             this.tableLayoutPanel11.TabIndex = 2;
             // 
             // panel9
@@ -431,7 +431,7 @@
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(30, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(334, 35);
+            this.panel9.Size = new System.Drawing.Size(333, 35);
             this.panel9.TabIndex = 0;
             // 
             // bunifuSeparator2
@@ -463,7 +463,7 @@
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 8.841463F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70.68965F));
             this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.68966F));
-            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel16.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 27F));
             this.tableLayoutPanel16.Controls.Add(this.panel15, 1, 1);
             this.tableLayoutPanel16.Controls.Add(this.panel16, 1, 3);
             this.tableLayoutPanel16.Controls.Add(this.panel19, 2, 1);
@@ -477,16 +477,16 @@
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.051282F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 35.25641F));
             this.tableLayoutPanel16.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.97436F));
-            this.tableLayoutPanel16.Size = new System.Drawing.Size(367, 174);
+            this.tableLayoutPanel16.Size = new System.Drawing.Size(366, 174);
             this.tableLayoutPanel16.TabIndex = 3;
             // 
             // panel15
             // 
             this.panel15.Controls.Add(this.label6);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(33, 15);
+            this.panel15.Location = new System.Drawing.Point(32, 15);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(235, 66);
+            this.panel15.Size = new System.Drawing.Size(233, 66);
             this.panel15.TabIndex = 0;
             // 
             // label6
@@ -504,9 +504,9 @@
             // 
             this.panel16.Controls.Add(this.label7);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(33, 99);
+            this.panel16.Location = new System.Drawing.Point(32, 99);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(235, 55);
+            this.panel16.Size = new System.Drawing.Size(233, 55);
             this.panel16.TabIndex = 1;
             // 
             // label7
@@ -524,9 +524,9 @@
             // 
             this.panel19.Controls.Add(this.label10);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(274, 15);
+            this.panel19.Location = new System.Drawing.Point(271, 15);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(64, 66);
+            this.panel19.Size = new System.Drawing.Size(63, 66);
             this.panel19.TabIndex = 2;
             // 
             // label10
@@ -544,9 +544,9 @@
             // 
             this.panel20.Controls.Add(this.label11);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(274, 99);
+            this.panel20.Location = new System.Drawing.Point(271, 99);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(64, 55);
+            this.panel20.Size = new System.Drawing.Size(63, 55);
             this.panel20.TabIndex = 3;
             // 
             // label11
@@ -565,9 +565,9 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.panel5.Controls.Add(this.tableLayoutPanel7);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(821, 3);
+            this.panel5.Location = new System.Drawing.Point(819, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(437, 227);
+            this.panel5.Size = new System.Drawing.Size(436, 227);
             this.panel5.TabIndex = 2;
             // 
             // tableLayoutPanel7
@@ -583,7 +583,7 @@
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.26432F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.73568F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(437, 227);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(436, 227);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // tableLayoutPanel12
@@ -597,8 +597,8 @@
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 1;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 59F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(431, 39);
+            this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(430, 40);
             this.tableLayoutPanel12.TabIndex = 2;
             // 
             // panel10
@@ -607,7 +607,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(16, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(412, 33);
+            this.panel10.Size = new System.Drawing.Size(411, 34);
             this.panel10.TabIndex = 0;
             // 
             // label3
@@ -630,7 +630,7 @@
             this.tableLayoutPanel17.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel17.Controls.Add(this.panel24, 1, 1);
             this.tableLayoutPanel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 48);
+            this.tableLayoutPanel17.Location = new System.Drawing.Point(3, 49);
             this.tableLayoutPanel17.Name = "tableLayoutPanel17";
             this.tableLayoutPanel17.RowCount = 3;
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386364F));
@@ -638,8 +638,43 @@
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.522727F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel17.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel17.Size = new System.Drawing.Size(431, 176);
+            this.tableLayoutPanel17.Size = new System.Drawing.Size(430, 175);
             this.tableLayoutPanel17.TabIndex = 3;
+            // 
+            // panel24
+            // 
+            this.panel24.Controls.Add(this.chart2);
+            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel24.Location = new System.Drawing.Point(18, 16);
+            this.panel24.Name = "panel24";
+            this.panel24.Size = new System.Drawing.Size(386, 141);
+            this.panel24.TabIndex = 0;
+            // 
+            // chart2
+            // 
+            this.chart2.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea1);
+            legend1.BackColor = System.Drawing.Color.Transparent;
+            legendItem1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            legendItem1.Name = "Proprietary";
+            legendItem2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            legendItem2.Name = "Visitor";
+            legend1.CustomItems.Add(legendItem1);
+            legend1.CustomItems.Add(legendItem2);
+            legend1.Name = "Legend";
+            this.chart2.Legends.Add(legend1);
+            this.chart2.Location = new System.Drawing.Point(-2, 0);
+            this.chart2.Name = "chart2";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
+            series1.Legend = "Legend";
+            series1.Name = "Series1";
+            this.chart2.Series.Add(series1);
+            this.chart2.Size = new System.Drawing.Size(290, 139);
+            this.chart2.TabIndex = 0;
+            this.chart2.Text = "chart2";
             // 
             // tableLayoutPanel4
             // 
@@ -648,7 +683,7 @@
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 63.91804F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 36.08195F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 26F));
             this.tableLayoutPanel4.Controls.Add(this.panel6, 3, 0);
             this.tableLayoutPanel4.Controls.Add(this.panel1, 1, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -664,9 +699,9 @@
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(207)))), ((int)(((byte)(244)))));
             this.panel6.Controls.Add(this.tableLayoutPanel9);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(825, 3);
+            this.panel6.Location = new System.Drawing.Point(824, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(435, 387);
+            this.panel6.Size = new System.Drawing.Size(434, 387);
             this.panel6.TabIndex = 1;
             // 
             // tableLayoutPanel9
@@ -682,7 +717,7 @@
             this.tableLayoutPanel9.RowCount = 2;
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.07317F));
             this.tableLayoutPanel9.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.92683F));
-            this.tableLayoutPanel9.Size = new System.Drawing.Size(435, 387);
+            this.tableLayoutPanel9.Size = new System.Drawing.Size(434, 387);
             this.tableLayoutPanel9.TabIndex = 1;
             // 
             // tableLayoutPanel13
@@ -697,7 +732,7 @@
             this.tableLayoutPanel13.RowCount = 1;
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel13.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel13.Size = new System.Drawing.Size(429, 60);
+            this.tableLayoutPanel13.Size = new System.Drawing.Size(428, 60);
             this.tableLayoutPanel13.TabIndex = 1;
             // 
             // panel11
@@ -707,7 +742,7 @@
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(17, 3);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(409, 54);
+            this.panel11.Size = new System.Drawing.Size(408, 54);
             this.panel11.TabIndex = 0;
             // 
             // bunifuSeparator1
@@ -739,7 +774,7 @@
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel21.Location = new System.Drawing.Point(3, 69);
             this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(429, 315);
+            this.panel21.Size = new System.Drawing.Size(428, 315);
             this.panel21.TabIndex = 2;
             // 
             // tableLayoutPanel19
@@ -756,7 +791,7 @@
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.492064F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.01588F));
             this.tableLayoutPanel19.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.174603F));
-            this.tableLayoutPanel19.Size = new System.Drawing.Size(429, 315);
+            this.tableLayoutPanel19.Size = new System.Drawing.Size(428, 315);
             this.tableLayoutPanel19.TabIndex = 0;
             // 
             // panel23
@@ -765,7 +800,7 @@
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel23.Location = new System.Drawing.Point(14, 14);
             this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(401, 287);
+            this.panel23.Size = new System.Drawing.Size(400, 287);
             this.panel23.TabIndex = 0;
             // 
             // chart1
@@ -787,7 +822,7 @@
             series2.Legend = "Legend1";
             series2.Name = "type";
             this.chart1.Series.Add(series2);
-            this.chart1.Size = new System.Drawing.Size(333, 222);
+            this.chart1.Size = new System.Drawing.Size(332, 222);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
@@ -798,7 +833,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(23, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(776, 387);
+            this.panel1.Size = new System.Drawing.Size(775, 387);
             this.panel1.TabIndex = 0;
             // 
             // tableLayoutPanel8
@@ -811,8 +846,8 @@
             this.tableLayoutPanel8.Name = "tableLayoutPanel8";
             this.tableLayoutPanel8.RowCount = 1;
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(776, 387);
+            this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 387F));
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(775, 387);
             this.tableLayoutPanel8.TabIndex = 1;
             // 
             // tableLayoutPanel18
@@ -829,7 +864,7 @@
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.184713F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 93.63057F));
             this.tableLayoutPanel18.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.866242F));
-            this.tableLayoutPanel18.Size = new System.Drawing.Size(770, 381);
+            this.tableLayoutPanel18.Size = new System.Drawing.Size(769, 381);
             this.tableLayoutPanel18.TabIndex = 2;
             // 
             // panel22
@@ -838,10 +873,63 @@
             this.panel22.Controls.Add(this.label1);
             this.panel22.Controls.Add(this.gunaCircleProgressBar1);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel22.Location = new System.Drawing.Point(11, 15);
+            this.panel22.Location = new System.Drawing.Point(10, 15);
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(745, 351);
             this.panel22.TabIndex = 0;
+            // 
+            // chart3
+            // 
+            this.chart3.BackColor = System.Drawing.Color.Transparent;
+            chartArea3.BackColor = System.Drawing.Color.Transparent;
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.BackColor = System.Drawing.Color.Transparent;
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
+            this.chart3.Location = new System.Drawing.Point(282, 34);
+            this.chart3.Name = "chart3";
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Student";
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Employee";
+            this.chart3.Series.Add(series3);
+            this.chart3.Series.Add(series4);
+            this.chart3.Size = new System.Drawing.Size(444, 258);
+            this.chart3.TabIndex = 18;
+            this.chart3.Text = "chart3";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
+            this.label1.Location = new System.Drawing.Point(65, 197);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 48);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Visitor Vehicle\r\nEntering";
+            // 
+            // gunaCircleProgressBar1
+            // 
+            this.gunaCircleProgressBar1.AnimationSpeed = 0.6F;
+            this.gunaCircleProgressBar1.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleProgressBar1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaCircleProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleProgressBar1.IdleOffset = 20;
+            this.gunaCircleProgressBar1.Image = null;
+            this.gunaCircleProgressBar1.ImageSize = new System.Drawing.Size(52, 52);
+            this.gunaCircleProgressBar1.Location = new System.Drawing.Point(60, 14);
+            this.gunaCircleProgressBar1.Name = "gunaCircleProgressBar1";
+            this.gunaCircleProgressBar1.ProgressMaxColor = System.Drawing.Color.OrangeRed;
+            this.gunaCircleProgressBar1.ProgressMinColor = System.Drawing.Color.Lime;
+            this.gunaCircleProgressBar1.ProgressOffset = 20;
+            this.gunaCircleProgressBar1.Size = new System.Drawing.Size(175, 169);
+            this.gunaCircleProgressBar1.TabIndex = 0;
+            this.gunaCircleProgressBar1.UseProgressPercentText = true;
+            this.gunaCircleProgressBar1.Value = 60;
             // 
             // panel7
             // 
@@ -871,94 +959,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1300, 788);
             this.panel2.TabIndex = 2;
-            // 
-            // chart2
-            // 
-            this.chart2.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.BackColor = System.Drawing.Color.Transparent;
-            chartArea1.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea1);
-            legend1.BackColor = System.Drawing.Color.Transparent;
-            legendItem1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            legendItem1.Name = "Proprietary";
-            legendItem2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            legendItem2.Name = "Visitor";
-            legend1.CustomItems.Add(legendItem1);
-            legend1.CustomItems.Add(legendItem2);
-            legend1.Name = "Legend";
-            this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(62, 1);
-            this.chart2.Name = "chart2";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Doughnut;
-            series1.Legend = "Legend";
-            series1.Name = "Series1";
-            this.chart2.Series.Add(series1);
-            this.chart2.Size = new System.Drawing.Size(290, 139);
-            this.chart2.TabIndex = 0;
-            this.chart2.Text = "chart2";
-            // 
-            // panel24
-            // 
-            this.panel24.Controls.Add(this.chart2);
-            this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(18, 16);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(387, 141);
-            this.panel24.TabIndex = 0;
-            // 
-            // gunaCircleProgressBar1
-            // 
-            this.gunaCircleProgressBar1.AnimationSpeed = 0.6F;
-            this.gunaCircleProgressBar1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleProgressBar1.Font = new System.Drawing.Font("Open Sans Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaCircleProgressBar1.IdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleProgressBar1.IdleOffset = 20;
-            this.gunaCircleProgressBar1.Image = null;
-            this.gunaCircleProgressBar1.ImageSize = new System.Drawing.Size(52, 52);
-            this.gunaCircleProgressBar1.Location = new System.Drawing.Point(60, 14);
-            this.gunaCircleProgressBar1.Name = "gunaCircleProgressBar1";
-            this.gunaCircleProgressBar1.ProgressMaxColor = System.Drawing.Color.OrangeRed;
-            this.gunaCircleProgressBar1.ProgressMinColor = System.Drawing.Color.Lime;
-            this.gunaCircleProgressBar1.ProgressOffset = 20;
-            this.gunaCircleProgressBar1.Size = new System.Drawing.Size(175, 169);
-            this.gunaCircleProgressBar1.TabIndex = 0;
-            this.gunaCircleProgressBar1.UseProgressPercentText = true;
-            this.gunaCircleProgressBar1.Value = 60;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(53)))), ((int)(((byte)(49)))));
-            this.label1.Location = new System.Drawing.Point(65, 197);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 48);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Visitor Vehicle\r\nEntering";
-            // 
-            // chart3
-            // 
-            this.chart3.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.BackColor = System.Drawing.Color.Transparent;
-            chartArea3.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea3);
-            legend3.BackColor = System.Drawing.Color.Transparent;
-            legend3.Name = "Legend1";
-            this.chart3.Legends.Add(legend3);
-            this.chart3.Location = new System.Drawing.Point(282, 34);
-            this.chart3.Name = "chart3";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Student";
-            series4.ChartArea = "ChartArea1";
-            series4.Legend = "Legend1";
-            series4.Name = "Employee";
-            this.chart3.Series.Add(series3);
-            this.chart3.Series.Add(series4);
-            this.chart3.Size = new System.Drawing.Size(444, 258);
-            this.chart3.TabIndex = 18;
-            this.chart3.Text = "chart3";
             // 
             // DashboardPanel
             // 
@@ -1008,6 +1008,8 @@
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.tableLayoutPanel17.ResumeLayout(false);
+            this.panel24.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.tableLayoutPanel9.ResumeLayout(false);
@@ -1023,12 +1025,10 @@
             this.tableLayoutPanel18.ResumeLayout(false);
             this.panel22.ResumeLayout(false);
             this.panel22.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart2)).EndInit();
-            this.panel24.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.chart3)).EndInit();
             this.ResumeLayout(false);
 
         }

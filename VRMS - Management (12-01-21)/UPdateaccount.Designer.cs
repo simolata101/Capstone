@@ -268,7 +268,7 @@
             this.gunaButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = global::VRMS___Management__12_01_21_.Properties.Resources.cross;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(30, 40);
+            this.gunaButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaButton2.Location = new System.Drawing.Point(484, 420);
             this.gunaButton2.Margin = new System.Windows.Forms.Padding(2);
             this.gunaButton2.Name = "gunaButton2";
@@ -294,7 +294,7 @@
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold);
             this.gunaButton1.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton1.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton1.Image")));
+            this.gunaButton1.Image = global::VRMS___Management__12_01_21_.Properties.Resources.save__1_;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(304, 420);
             this.gunaButton1.Margin = new System.Windows.Forms.Padding(2);

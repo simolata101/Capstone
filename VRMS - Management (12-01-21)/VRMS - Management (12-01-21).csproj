@@ -371,6 +371,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="QCU.ico" />
+    <None Include="Resources\save %281%291.png" />
     <None Include="Resources\cross.png" />
     <None Include="Resources\camera %281%29.png" />
     <None Include="Resources\add-image.png" />

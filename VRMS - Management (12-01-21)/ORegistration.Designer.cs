@@ -62,7 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.bunifuCustomDataGrid1 = new Bunifu.Framework.UI.BunifuCustomDataGrid();
+            this.dgvRP = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.Corners = new Bunifu.Framework.UI.BunifuElipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbOwner)).BeginInit();
             this.pnlBody.SuspendLayout();
@@ -77,7 +77,7 @@
             this.pnlLicense.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRP)).BeginInit();
             this.SuspendLayout();
             // 
             // pbOwner
@@ -85,8 +85,9 @@
             this.pbOwner.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pbOwner.BackColor = System.Drawing.Color.Transparent;
+            this.pbOwner.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbOwner.BackgroundImage")));
+            this.pbOwner.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pbOwner.BaseColor = System.Drawing.Color.White;
-            this.pbOwner.Image = ((System.Drawing.Image)(resources.GetObject("pbOwner.Image")));
             this.pbOwner.Location = new System.Drawing.Point(36, 35);
             this.pbOwner.Name = "pbOwner";
             this.pbOwner.Size = new System.Drawing.Size(200, 200);
@@ -353,7 +354,7 @@
             this.tlpContents.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tlpContents.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
             this.tlpContents.Controls.Add(this.tlpShow, 0, 0);
-            this.tlpContents.Controls.Add(this.bunifuCustomDataGrid1, 1, 0);
+            this.tlpContents.Controls.Add(this.dgvRP, 1, 0);
             this.tlpContents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlpContents.Location = new System.Drawing.Point(3, 123);
             this.tlpContents.Name = "tlpContents";
@@ -525,14 +526,14 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Proprietary Id:";
             // 
-            // bunifuCustomDataGrid1
+            // dgvRP
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomDataGrid1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.bunifuCustomDataGrid1.BackgroundColor = System.Drawing.Color.Silver;
-            this.bunifuCustomDataGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.bunifuCustomDataGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvRP.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvRP.BackgroundColor = System.Drawing.Color.Silver;
+            this.dgvRP.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvRP.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.SteelBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -540,16 +541,16 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.bunifuCustomDataGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuCustomDataGrid1.DoubleBuffered = true;
-            this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
-            this.bunifuCustomDataGrid1.HeaderBgColor = System.Drawing.Color.SteelBlue;
-            this.bunifuCustomDataGrid1.HeaderForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(289, 3);
-            this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
-            this.bunifuCustomDataGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvRP.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvRP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRP.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRP.DoubleBuffered = true;
+            this.dgvRP.EnableHeadersVisualStyles = false;
+            this.dgvRP.HeaderBgColor = System.Drawing.Color.SteelBlue;
+            this.dgvRP.HeaderForeColor = System.Drawing.Color.Black;
+            this.dgvRP.Location = new System.Drawing.Point(289, 3);
+            this.dgvRP.Name = "dgvRP";
+            this.dgvRP.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -557,15 +558,15 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.bunifuCustomDataGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.bunifuCustomDataGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvRP.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvRP.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomDataGrid1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.bunifuCustomDataGrid1.Size = new System.Drawing.Size(662, 408);
-            this.bunifuCustomDataGrid1.TabIndex = 2;
-            this.bunifuCustomDataGrid1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
-            this.bunifuCustomDataGrid1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellDoubleClick);
+            this.dgvRP.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvRP.Size = new System.Drawing.Size(662, 408);
+            this.dgvRP.TabIndex = 2;
+            this.dgvRP.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellClick);
+            this.dgvRP.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuCustomDataGrid1_CellDoubleClick);
             // 
             // Corners
             // 
@@ -603,7 +604,7 @@
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuCustomDataGrid1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRP)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -629,7 +630,7 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Bunifu.Framework.UI.BunifuElipse Corners;
         private System.Windows.Forms.Label lblShowID;
-        private Bunifu.Framework.UI.BunifuCustomDataGrid bunifuCustomDataGrid1;
+        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvRP;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label8;

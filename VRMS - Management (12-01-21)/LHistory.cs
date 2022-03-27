@@ -127,7 +127,7 @@ namespace VRMS___Management__12_01_21_
             {
                 DGVPrinter printer = new DGVPrinter();
                 DGVPrinter.ImbeddedImage img1 = new DGVPrinter.ImbeddedImage();
-                Bitmap bitmap1 = new Bitmap(@"C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (New Version Feb 21)\Resources\img\qcu2.png");
+                Bitmap bitmap1 = new Bitmap(@"C:\Users\Simolata\Source\Repos\simolata101\Capstone\Resources\img\qcu2.png");
                 // This code is to crop the image size
                 //System.Drawing.(bitmap1, 60, 50 ,img1.width, img1.height);
                 //  System.Drawing.Bitmap(bitmap1,60,50 img1.Width,img1.Height);

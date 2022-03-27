@@ -210,6 +210,7 @@
             this.btnOkay.TabIndex = 0;
             this.btnOkay.Text = "OK";
             this.btnOkay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnOkay.Click += new System.EventHandler(this.btnOkay_Click);
             // 
             // gunaElipse1
             // 
@@ -253,8 +254,8 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnCancel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         public System.Windows.Forms.Label lblShowID;
+        public System.Windows.Forms.Label label3;
     }
 }

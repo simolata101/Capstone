@@ -768,7 +768,6 @@ C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.UPdateaccount.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.VisitorEntryReport.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.VUpdate.resources
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csprojResolveAssemblyReference.cache
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ArchiveRetrieve.resources
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.Form1.resources
 C:\Users\HP\Desktop\Capstone\VRMS - Management (12-01-21)\bin\Debug\Quezon City University.exe.config
@@ -1124,6 +1123,5 @@ C:\Users\Simolata\Desktop\GALING KAY JEM LATEST UPDATE ADMIN\Capstone\VRMS - Man
 C:\Users\Simolata\Desktop\GALING KAY JEM LATEST UPDATE ADMIN\Capstone\VRMS - Management (12-01-21)\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
 C:\Users\Simolata\Desktop\GALING KAY JEM LATEST UPDATE ADMIN\Capstone\VRMS - Management (12-01-21)\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\Users\Simolata\Desktop\GALING KAY JEM LATEST UPDATE ADMIN\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csprojResolveAssemblyReference.cache
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Bunifu.UI.WinForms.BunifuGauge.xml
-C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS___Management__12_01_21_.ArchiveProprietary.resources
+C:\Users\Simolata\Source\Repos\simolata101\Capstone\VRMS - Management (12-01-21)\obj\Debug\VRMS - Management (12-01-21).csprojResolveAssemblyReference.cache
